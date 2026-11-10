@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilona & Co. | 100% Pure Vedic Desi Cow & Buffalo Ghee</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            maroon: '#52141A',
+                            deepMaroon: '#3b0b10',
+                            gold: '#D4AF37',
+                            lightGold: '#F3E5AB',
+                            cream: '#FDFBF7',
+                            warmGray: '#F5EFEB',
+                            charcoal: '#221815'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        handwritten: ['"Caveat"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #ECC869 0%, #C99726 50%, #FFDF80 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-pattern {
+            background-color: #52141A;
+            background-image: radial-gradient(#d4af371f 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        /* Bilona Churning Animations */
+        @keyframes bilonaRotate {
+            0% { transform: rotate(0deg); }
+            45% { transform: rotate(18deg); }
+            50% { transform: rotate(18deg); }
+            95% { transform: rotate(-18deg); }
+            100% { transform: rotate(0deg); }
+        }
+        @keyframes bilonaRopeLeft {
+            0%, 100% { stroke-dashoffset: 0; }
+            50% { stroke-dashoffset: 24; }
+        }
+        @keyframes bilonaRopeRight {
+            0%, 100% { stroke-dashoffset: 0; }
+            50% { stroke-dashoffset: -24; }
+        }
+        @keyframes bubbleFloat {
+            0% { transform: translateY(0px) scale(0.7); opacity: 0; }
+            40% { opacity: 0.9; }
+            80% { transform: translateY(-38px) scale(1.15); opacity: 0.8; }
+            100% { transform: translateY(-50px) scale(1.2); opacity: 0; }
+        }
+        @keyframes curdWave {
+            0%, 100% { transform: scaleX(1) scaleY(1); }
+            50% { transform: scaleX(1.04) scaleY(0.96); }
+        }
+        @keyframes steamRise {
+            0% { transform: translateY(0) scaleX(1); opacity: 0; }
+            50% { opacity: 0.45; }
+            100% { transform: translateY(-40px) scaleX(1.4); opacity: 0; }
+        }
+        .animate-churn-spindle {
+            transform-origin: 200px 175px;
+            animation: bilonaRotate 1.8s ease-in-out infinite;
+        }
+        .animate-rope-pull-1 {
+            stroke-dasharray: 8 4;
+            animation: bilonaRopeLeft 1.8s ease-in-out infinite;
+        }
+        .animate-rope-pull-2 {
+            stroke-dasharray: 8 4;
+            animation: bilonaRopeRight 1.8s ease-in-out infinite;
+        }
+        .curd-surface {
+            transform-origin: 200px 185px;
+            animation: curdWave 1.8s ease-in-out infinite;
+        }
+        .b-bubble-1 { animation: bubbleFloat 2.4s ease-out infinite 0.2s; }
+        .b-bubble-2 { animation: bubbleFloat 2.1s ease-out infinite 0.9s; }
+        .b-bubble-3 { animation: bubbleFloat 2.7s ease-out infinite 1.5s; }
+        .b-bubble-4 { animation: bubbleFloat 2.3s ease-out infinite 0.5s; }
+        .steam-line-1 { animation: steamRise 3s ease-out infinite; }
+        .steam-line-2 { animation: steamRise 3.5s ease-out infinite 1.2s; }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-charcoal font-sans antialiased selection:bg-brand-gold selection:text-brand-deepMaroon">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-deepMaroon text-amber-200 text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2 border-b border-brand-gold/20">
+        <span class="inline-block animate-pulse">✨</span>
+        <span>Dadi ki Rasoi se seedha aapki thali mein — 100% Traditional Bilona Method</span>
+        <span class="hidden md:inline">| Free Pan-India Delivery on orders above ₹999</span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-brand-cream/95 backdrop-blur-md border-b border-amber-900/10 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-full bg-brand-maroon border-2 border-brand-gold flex flex-col items-center justify-center text-center p-1 shadow-md group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-fire-burner text-brand-gold text-xs"></i>
+                    <span class="text-[9px] font-serif uppercase tracking-widest text-amber-100 font-bold leading-tight">Bilona</span>
+                    <span class="text-[7px] text-brand-gold font-sans">& CO.</span>
+                </div>
+                <div>
+                    <span class="font-serif text-2xl font-bold tracking-tight text-brand-maroon block leading-none">Bilona & Co.</span>
+                    <span class="text-[10px] tracking-widest text-amber-800 uppercase font-semibold">Modinagar • Pure Desi Ghee</span>
+                </div>
+            </a>
+
+            <!-- Nav Links Desktop -->
+            <nav class="hidden md:flex items-center gap-1 bg-brand-warmGray/80 p-1.5 rounded-full border border-amber-900/10 text-xs font-semibold text-stone-700">
+                <a href="#home" id="navlink-home" class="nav-item px-3.5 py-1.5 rounded-full transition-all duration-200 bg-brand-maroon text-amber-100 shadow-sm">Home</a>
+                <a href="#story" id="navlink-story" class="nav-item px-3.5 py-1.5 rounded-full transition-all duration-200 hover:text-brand-maroon">Our Story</a>
+                <a href="#process" id="navlink-process" class="nav-item px-3.5 py-1.5 rounded-full transition-all duration-200 hover:text-brand-maroon">Vedic Method</a>
+                <a href="#products" id="navlink-products" class="nav-item px-3.5 py-1.5 rounded-full transition-all duration-200 hover:text-brand-maroon">Products</a>
+                <a href="#reviews" id="navlink-reviews" class="nav-item px-3.5 py-1.5 rounded-full transition-all duration-200 hover:text-brand-maroon">Reviews</a>
+                <a href="#order" id="navlink-order" class="nav-item px-3.5 py-1.5 rounded-full transition-all duration-200 hover:text-brand-maroon">Order Now</a>
+            </nav>
+
+            <!-- Quick Action / Cart -->
+            <div class="flex items-center gap-3">
+                <a href="tel:7302882134" class="hidden sm:inline-flex items-center gap-2 text-xs font-bold text-brand-maroon border border-brand-maroon/30 px-3 py-2 rounded-full hover:bg-brand-maroon hover:text-white transition">
+                    <i class="fa-solid fa-phone text-brand-gold"></i>
+                    <span>+91 7302882134</span>
+                </a>
+                <a href="https://wa.me/917302882134?text=Hello%20Bilona%20%26%20Co.,%20I%20would%20like%20to%20order%20pure%20desi%20ghee." target="_blank" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Order on WhatsApp</span>
+                </a>
+                <button onclick="toggleMobileMenu()" class="md:hidden text-brand-maroon p-2" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-cream border-b border-amber-900/10 px-6 py-4 space-y-2">
+            <a href="#home" onclick="toggleMobileMenu()" class="block w-full text-left font-semibold text-brand-maroon py-2 border-b border-stone-200/50">🏠 1. Home</a>
+            <a href="#story" onclick="toggleMobileMenu()" class="block w-full text-left font-semibold text-brand-maroon py-2 border-b border-stone-200/50">📜 2. Our Story & Note</a>
+            <a href="#process" onclick="toggleMobileMenu()" class="block w-full text-left font-semibold text-brand-maroon py-2 border-b border-stone-200/50">🏺 3. Vedic Bilona Method</a>
+            <a href="#products" onclick="toggleMobileMenu()" class="block w-full text-left font-semibold text-brand-maroon py-2 border-b border-stone-200/50">🛒 4. Our Products</a>
+            <a href="#reviews" onclick="toggleMobileMenu()" class="block w-full text-left font-semibold text-brand-maroon py-2 border-b border-stone-200/50">⭐ 5. Customer Reviews</a>
+            <a href="#order" onclick="toggleMobileMenu()" class="block w-full text-left font-semibold text-brand-maroon py-2">✍️ 6. Order Form</a>
+            <div class="pt-2 border-t border-amber-900/10 flex items-center justify-between text-xs text-stone-600">
+                <span>Modinagar, Uttar Pradesh</span>
+                <a href="https://instagram.com/bilona_co" target="_blank" class="text-brand-maroon font-bold flex items-center gap-1">
+                    <i class="fa-brands fa-instagram"></i> @bilona_co
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Wrapper: Continuous Sequential Layout -->
+    <main id="app-root" class="min-h-[70vh]">
+
+        <!-- SECTION 1: HOME -->
+        <section id="home" class="scroll-mt-24">
+            <!-- Hero Section -->
+            <div class="relative bg-pattern text-amber-50 overflow-hidden py-16 lg:py-24">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        
+                        <!-- Left Hero Copy -->
+                        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                            <div class="inline-flex items-center gap-2 bg-brand-deepMaroon/80 border border-brand-gold/40 px-3.5 py-1.5 rounded-full text-xs font-semibold text-brand-lightGold tracking-wider uppercase">
+                                <i class="fa-solid fa-seedling text-brand-gold"></i>
+                                <span>100% Shuddh • Handcrafted Daily • No Preservatives</span>
+                            </div>
+
+                            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-extrabold leading-[1.15] tracking-tight">
+                                Dadi Ki Rasoi Se Seedha <br class="hidden sm:inline" />
+                                <span class="gold-gradient-text">Aapki Thali Mein.</span>
+                            </h1>
+
+                            <p class="text-base sm:text-lg text-amber-100/90 max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                                Slow-churned in traditional clay pots using the authentic Vedic Bilona method. Fresh A2 Desi Cow Ghee and Pure Buffalo Ghee crafted with love, purity, and heritage.
+                            </p>
+
+                            <!-- Highlights bullets -->
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-left max-w-md mx-auto lg:mx-0 text-xs sm:text-sm">
+                                <div class="flex items-center gap-2 bg-black/20 p-2.5 rounded-xl border border-white/5">
+                                    <i class="fa-solid fa-check-circle text-brand-gold"></i>
+                                    <span>Made from Curd</span>
+                                </div>
+                                <div class="flex items-center gap-2 bg-black/20 p-2.5 rounded-xl border border-white/5">
+                                    <i class="fa-solid fa-check-circle text-brand-gold"></i>
+                                    <span>Zero Additives</span>
+                                </div>
+                                <div class="flex items-center gap-2 bg-black/20 p-2.5 rounded-xl border border-white/5">
+                                    <i class="fa-solid fa-check-circle text-brand-gold"></i>
+                                    <span>Danedar Texture</span>
+                                </div>
+                            </div>
+
+                            <!-- Call To Action -->
+                            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                                <a href="#products" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-brand-deepMaroon font-bold px-8 py-3.5 rounded-full shadow-lg shadow-black/20 hover:shadow-xl transition-all text-sm uppercase tracking-wider">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>Explore Products</span>
+                                </a>
+                                <a href="#story" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 text-brand-lightGold hover:text-white border border-brand-gold/30 hover:border-brand-gold px-6 py-3.5 rounded-full text-sm font-semibold transition">
+                                    <i class="fa-solid fa-book-open"></i>
+                                    <span>Read Our Story</span>
+                                </a>
+                            </div>
+
+                            <!-- Trust indicators -->
+                            <div class="pt-4 flex items-center justify-center lg:justify-start gap-6 text-xs text-amber-200/80">
+                                <div class="flex items-center gap-1.5">
+                                    <i class="fa-solid fa-shield-heart text-brand-gold"></i>
+                                    <span>Lab Tested Purity</span>
+                                </div>
+                                <div class="flex items-center gap-1.5">
+                                    <i class="fa-solid fa-truck-fast text-brand-gold"></i>
+                                    <span>Fast Doorstep Dispatch</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Hero Visual Card -->
+                        <div class="lg:col-span-5 flex justify-center">
+                            <div class="relative w-full max-w-md">
+                                <div class="absolute -inset-1.5 bg-gradient-to-r from-amber-400 to-brand-gold rounded-3xl blur-lg opacity-40"></div>
+                                <div class="relative bg-white text-brand-charcoal rounded-3xl p-6 sm:p-8 shadow-2xl border-4 border-amber-100/30">
+                                    <div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-amber-50 border border-amber-200 shadow-inner flex items-center justify-center">
+                                        <svg class="w-full h-full object-cover" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <radialGradient id="gheeGlowHome" cx="50%" cy="50%" r="50%">
+                                                    <stop offset="0%" stop-color="#FFF5D1" />
+                                                    <stop offset="60%" stop-color="#FCD34D" />
+                                                    <stop offset="100%" stop-color="#D97706" />
+                                                </radialGradient>
+                                                <linearGradient id="potGradHome" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                    <stop offset="0%" stop-color="#A2482B"/>
+                                                    <stop offset="100%" stop-color="#5B1E0C"/>
+                                                </linearGradient>
+                                            </defs>
+                                            <rect width="400" height="300" fill="#FCF8F2"/>
+                                            <ellipse cx="200" cy="240" rx="90" ry="18" fill="#e2d6c5"/>
+                                            <path d="M140 130 C120 180, 110 240, 200 240 C290 240, 280 180, 260 130 Z" fill="url(#potGradHome)"/>
+                                            <ellipse cx="200" cy="130" rx="60" ry="14" fill="#C05621"/>
+                                            <ellipse cx="200" cy="130" rx="52" ry="11" fill="url(#gheeGlowHome)"/>
+                                            <rect x="194" y="25" width="12" height="150" rx="4" fill="#8B4513"/>
+                                            <rect x="180" y="38" width="40" height="8" rx="3" fill="#A0522D"/>
+                                            <ellipse cx="200" cy="138" rx="20" ry="6" fill="#FBBF24" opacity="0.8"/>
+                                            <path d="M140 75 Q200 70 200 75 Q200 80 260 75" stroke="#E5D3B3" stroke-width="3" stroke-dasharray="4 2"/>
+                                            <path d="M140 85 Q200 80 200 85 Q200 90 260 85" stroke="#E5D3B3" stroke-width="3" stroke-dasharray="4 2"/>
+                                            <circle cx="215" cy="118" r="4" fill="#F59E0B"/>
+                                            <circle cx="185" cy="122" r="3" fill="#F59E0B"/>
+                                            <circle cx="200" cy="110" r="5" fill="#FEF08A"/>
+                                            <path d="M200 100 Q203 115 200 125" stroke="#FDE68A" stroke-width="3" stroke-linecap="round"/>
+                                            <text x="200" y="278" font-family="'Playfair Display', serif" font-size="14" fill="#78350F" text-anchor="middle" font-weight="bold">Traditional Vedic Bilona Churning</text>
+                                        </svg>
+                                        <span class="absolute top-3 left-3 bg-brand-maroon/90 text-amber-200 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                                            Modinagar Pure Batch
+                                        </span>
+                                    </div>
+
+                                    <div class="space-y-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-xs font-semibold text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                                <i class="fa-solid fa-check text-[10px]"></i> Freshly Churned
+                                            </span>
+                                            <div class="flex text-amber-500 text-xs gap-0.5">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                <span class="text-stone-500 text-[11px] ml-1">(4.9/5)</span>
+                                            </div>
+                                        </div>
+                                        <h3 class="font-serif font-bold text-xl text-brand-maroon">Original Vedic A2 Cow Ghee</h3>
+                                        <p class="text-xs text-stone-600 line-clamp-2">Golden, granular, rich aroma, and made exclusively from grass-fed desi cow cultured curd.</p>
+                                        
+                                        <div class="pt-2 flex items-center justify-between border-t border-amber-900/10">
+                                            <div>
+                                                <span class="text-xs text-stone-500 block">Starting from</span>
+                                                <span class="text-xl font-extrabold text-brand-deepMaroon">₹849 <span class="text-xs font-normal text-stone-500">/ 500ml</span></span>
+                                            </div>
+                                            <a href="#products" class="bg-brand-maroon hover:bg-brand-deepMaroon text-amber-100 px-4 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition flex items-center gap-1.5 shadow">
+                                                <span>View Options</span>
+                                                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Badges Strip -->
+            <div class="py-8 bg-brand-warmGray border-b border-amber-900/10">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                        <div class="flex flex-col items-center p-3">
+                            <div class="w-12 h-12 rounded-full bg-amber-100 text-brand-maroon flex items-center justify-center text-xl mb-2 shadow-sm">🏺</div>
+                            <h4 class="font-bold text-sm text-stone-800">Clay Pot Churned</h4>
+                            <p class="text-xs text-stone-500">Ancient wooden bilona process</p>
+                        </div>
+                        <div class="flex flex-col items-center p-3">
+                            <div class="w-12 h-12 rounded-full bg-amber-100 text-brand-maroon flex items-center justify-center text-xl mb-2 shadow-sm">🥛</div>
+                            <h4 class="font-bold text-sm text-stone-800">Cultured Curd Only</h4>
+                            <p class="text-xs text-stone-500">Never direct cream or butter</p>
+                        </div>
+                        <div class="flex flex-col items-center p-3">
+                            <div class="w-12 h-12 rounded-full bg-amber-100 text-brand-maroon flex items-center justify-center text-xl mb-2 shadow-sm">🌿</div>
+                            <h4 class="font-bold text-sm text-stone-800">Zero Chemicals</h4>
+                            <p class="text-xs text-stone-500">No preservatives, dyes, or essence</p>
+                        </div>
+                        <div class="flex flex-col items-center p-3">
+                            <div class="w-12 h-12 rounded-full bg-amber-100 text-brand-maroon flex items-center justify-center text-xl mb-2 shadow-sm">🏡</div>
+                            <h4 class="font-bold text-sm text-stone-800">Ghar Jaisa Swad</h4>
+                            <p class="text-xs text-stone-500">Handmade in Modinagar batch-by-batch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: OUR STORY & HANDWRITTEN LETTER -->
+        <section id="story" class="scroll-mt-24 py-16 lg:py-24 bg-brand-cream border-b border-amber-900/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Instagram Handwritten Letter Reproduction -->
+                    <div class="lg:col-span-6 flex justify-center">
+                        <div class="relative w-full max-w-lg bg-[#fffef5] border border-amber-200/80 p-6 sm:p-10 rounded-2xl shadow-xl transform sm:-rotate-1 transition hover:rotate-0 duration-300">
+                            <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-28 h-7 bg-amber-200/60 backdrop-blur-sm -rotate-2 border border-amber-300/40 shadow-sm"></div>
+
+                            <div class="font-handwritten text-xl sm:text-2xl text-stone-800 space-y-4 leading-relaxed">
+                                <p class="font-bold text-2xl text-brand-maroon">Namaste 🙏,</p>
+                                <p>Bilona & Co. par bharosa karne ke liye dil se dhanyawad.</p>
+                                <p>Har bottle ko hum shuddhata, safai aur traditional bilona method se taiyar karte hain. Bikul ghar jaisa swad aur quality dene ki koshish karte hain.</p>
+                                <p>Umeed hai hamara ghee aapke ghar me health aur khushiyan laaye!</p>
+                                <div class="pt-4 flex justify-between items-end border-t border-stone-200">
+                                    <div>
+                                        <span class="text-sm font-sans uppercase tracking-widest text-stone-500 block">Modinagar (U.P.)</span>
+                                        <span class="text-xs font-sans text-stone-400">Pure Desi Ghee Makers</span>
+                                    </div>
+                                    <p class="text-2xl sm:text-3xl text-brand-maroon font-bold">Team Bilona & Co.</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute bottom-4 right-4 sm:right-6 border-2 border-dashed border-brand-maroon/30 rounded-full w-20 h-20 flex flex-col items-center justify-center -rotate-12 pointer-events-none opacity-40">
+                                <span class="text-[9px] uppercase font-bold text-brand-maroon tracking-tighter">BILONA METHOD</span>
+                                <span class="text-[7px] text-stone-600 font-sans">100% PURE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Content -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="inline-block text-brand-maroon text-xs font-bold uppercase tracking-widest bg-amber-100 px-3 py-1 rounded-full">
+                            Our Roots & Philosophy
+                        </div>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-maroon leading-tight">
+                            We Don't Just Sell Ghee, We Deliver A Promise.
+                        </h2>
+                        <p class="text-stone-600 text-base leading-relaxed">
+                            In an era dominated by industrial machinery, artificial food colors, and heating direct dairy cream, <strong>Bilona & Co.</strong> was born out of a simple longing: <em>the unmatched aroma and grainy texture of Dadi's kitchen.</em>
+                        </p>
+                        <p class="text-stone-600 text-base leading-relaxed">
+                            Operating from <strong>Modinagar</strong>, we strictly follow the 5-step ancient Vedic bilona method. Cows and buffaloes are nurtured with care, raw milk is turned to curd in clay vessels, and churned using two-way wooden mathanis early morning to separate nutritious makkhan before slow cooking on a mild flame.
+                        </p>
+
+                        <div class="border-l-4 border-brand-gold pl-4 py-1 italic text-stone-700 font-serif">
+                            “We delivers what we promises — 100% pure homemade authenticity in every spoonful.”
+                        </div>
+
+                        <div class="pt-2 flex flex-wrap gap-4">
+                            <a href="#products" class="inline-flex items-center gap-2 bg-brand-maroon hover:bg-brand-deepMaroon text-amber-100 px-6 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider transition shadow">
+                                Explore Products
+                            </a>
+                            <a href="https://instagram.com/bilona_co" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-full text-xs sm:text-sm font-bold transition shadow hover:opacity-90">
+                                <i class="fa-brands fa-instagram text-base"></i>
+                                <span>Follow @bilona_co</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: VEDIC METHOD PROCESS -->
+        <section id="process" class="scroll-mt-24 py-16 lg:py-24 bg-brand-warmGray border-b border-amber-900/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-xs uppercase font-bold tracking-widest text-amber-800 bg-amber-200/60 px-3 py-1 rounded-full">Ancient Ayurvedic Craft</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-maroon mt-3 mb-4">The Vedic Bilona Method</h2>
+                    <p class="text-stone-600 text-sm sm:text-base">We don't use high-heat machines or commercial cream boiling. Milk is gently turned into curd in earthen pots, then hand-churned in two opposite directions.</p>
+                </div>
+
+                <!-- Clean Animation & Steps Showcase -->
+                <div class="mb-16 bg-white rounded-3xl p-6 sm:p-10 border border-amber-900/10 shadow-lg">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                        <!-- Left: Simplified, Beautiful Continuous Churn Animation -->
+                        <div class="lg:col-span-5 flex flex-col items-center">
+                            <div class="relative w-full max-w-sm bg-gradient-to-b from-[#FFFDF9] via-[#FAF3EA] to-[#F1E4D0] rounded-3xl p-5 border-2 border-amber-200 shadow-inner overflow-hidden">
+                                
+                                <!-- Floating Pill -->
+                                <div class="absolute top-4 left-4 z-20 flex items-center gap-2 bg-brand-deepMaroon text-amber-100 text-[11px] font-semibold px-3 py-1 rounded-full shadow-sm">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                                    <span>Wooden Mathani Churning</span>
+                                </div>
+
+                                <!-- The Animated SVG Bilona Machine (Simplified & Clean) -->
+                                <div class="relative w-full aspect-square flex items-center justify-center">
+                                    <svg id="bilonaSimulationSvg" class="w-full h-full" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <radialGradient id="clayMatka" cx="35%" cy="30%" r="70%">
+                                                <stop offset="0%" stop-color="#CA6B45"/>
+                                                <stop offset="45%" stop-color="#9C4022"/>
+                                                <stop offset="90%" stop-color="#5E200C"/>
+                                                <stop offset="100%" stop-color="#3D1205"/>
+                                            </radialGradient>
+                                            
+                                            <radialGradient id="curdSurfaceGrad" cx="50%" cy="50%" r="50%">
+                                                <stop offset="0%" stop-color="#FFFEE6"/>
+                                                <stop offset="60%" stop-color="#FCEAB3"/>
+                                                <stop offset="90%" stop-color="#F6CE65"/>
+                                                <stop offset="100%" stop-color="#D97706"/>
+                                            </radialGradient>
+                                            
+                                            <linearGradient id="woodPost" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" stop-color="#78350F"/>
+                                                <stop offset="40%" stop-color="#A16207"/>
+                                                <stop offset="100%" stop-color="#552407"/>
+                                            </linearGradient>
+
+                                            <filter id="shadowBlur" x="-10%" y="-10%" width="120%" height="120%">
+                                                <feDropShadow dx="0" dy="6" stdDeviation="5" flood-opacity="0.18" flood-color="#451A03"/>
+                                            </filter>
+                                        </defs>
+
+                                        <!-- Ambient Shadow Under Matka -->
+                                        <ellipse cx="200" cy="285" rx="100" ry="16" fill="#000000" opacity="0.14"/>
+                                        <ellipse cx="200" cy="283" rx="70" ry="10" fill="#000000" opacity="0.12"/>
+
+                                        <!-- Clay Matka Body -->
+                                        <g filter="url(#shadowBlur)">
+                                            <path d="M130 178 C105 210, 105 270, 200 278 C295 270, 295 210, 270 178 Z" fill="url(#clayMatka)"/>
+                                            <path d="M145 158 C145 174, 255 174, 255 158 L250 178 C235 186, 165 186, 150 178 Z" fill="#873618"/>
+                                            <ellipse cx="200" cy="158" rx="55" ry="12" fill="#6A270E"/>
+                                            <ellipse cx="200" cy="158" rx="48" ry="9" fill="#4B1B09"/>
+                                        </g>
+
+                                        <!-- Curd Surface inside pot -->
+                                        <g class="curd-surface">
+                                            <ellipse cx="200" cy="160" rx="46" ry="8.5" fill="url(#curdSurfaceGrad)"/>
+                                            <ellipse cx="200" cy="160" rx="34" ry="5.5" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1.2" stroke-dasharray="8 6"/>
+                                            <ellipse cx="200" cy="160" rx="20" ry="3.5" stroke="#F59E0B" stroke-opacity="0.7" stroke-width="1.2"/>
+                                        </g>
+
+                                        <!-- Rising Makkhan Froth -->
+                                        <g>
+                                            <circle class="b-bubble-1" cx="185" cy="156" r="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+                                            <circle class="b-bubble-2" cx="215" cy="155" r="7.5" fill="#FFFBEB" stroke="#D97706" stroke-width="1.2"/>
+                                            <circle class="b-bubble-3" cx="198" cy="152" r="5" fill="#FEF08A" stroke="#B45309" stroke-width="0.8"/>
+                                            <circle class="b-bubble-4" cx="174" cy="158" r="4.5" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+                                        </g>
+
+                                        <!-- Wood Frame Stand -->
+                                        <path d="M75 285 L75 35 Q75 25 85 25 L95 25 Q105 25 105 35 L105 285 Z" fill="url(#woodPost)"/>
+                                        <rect x="70" y="70" width="130" height="14" rx="4" fill="url(#woodPost)"/>
+                                        <circle cx="90" cy="77" r="4" fill="#3D1205"/>
+
+                                        <!-- Churning Ropes -->
+                                        <path class="animate-rope-pull-1" d="M75 92 Q130 96 195 90" stroke="#E2C799" stroke-width="3" stroke-linecap="round"/>
+                                        <path class="animate-rope-pull-2" d="M320 85 Q255 96 205 90" stroke="#D7B57F" stroke-width="3" stroke-linecap="round"/>
+
+                                        <!-- Central Rotating Mathani -->
+                                        <g id="spindleGroup" class="animate-churn-spindle">
+                                            <rect x="195" y="30" width="10" height="160" rx="4" fill="url(#woodPost)"/>
+                                            <ellipse cx="200" cy="40" rx="8" ry="4" fill="#92400E"/>
+                                            <ellipse cx="200" cy="90" rx="9" ry="4" fill="#78350F"/>
+                                            <path d="M172 176 L228 176 L222 192 L178 192 Z" fill="#92400E"/>
+                                            <line x1="180" y1="176" x2="175" y2="196" stroke="#78350F" stroke-width="3" stroke-linecap="round"/>
+                                            <line x1="200" y1="176" x2="200" y2="198" stroke="#5E200C" stroke-width="3" stroke-linecap="round"/>
+                                            <line x1="220" y1="176" x2="225" y2="196" stroke="#78350F" stroke-width="3" stroke-linecap="round"/>
+                                            <rect x="194" y="85" width="12" height="14" rx="2" fill="#C5A065"/>
+                                        </g>
+
+                                        <!-- Soft Steam / Aroma -->
+                                        <path class="steam-line-1" d="M190 145 Q185 125 192 110" stroke="#ECC869" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+                                        <path class="steam-line-2" d="M210 148 Q216 128 208 112" stroke="#ECC869" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+                                        <!-- Hand Ropes -->
+                                        <g opacity="0.85">
+                                            <path d="M60 90 Q72 86 80 92 Q72 98 60 96 Z" fill="#D4A373"/>
+                                            <path d="M335 84 Q322 80 315 86 Q322 93 335 90 Z" fill="#D4A373"/>
+                                        </g>
+
+                                        <g transform="translate(140, 296)">
+                                            <rect x="0" y="0" width="120" height="20" rx="10" fill="#52141A"/>
+                                            <text x="60" y="14" fill="#FDE68A" font-size="9" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" text-anchor="middle" letter-spacing="1">SLOW CHURNED</text>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div class="mt-2 text-center text-xs text-stone-600 font-medium">
+                                    <span>Continuous Clockwise & Counter-Clockwise Churning</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right: How Bilona Works (3 Clear Steps) -->
+                        <div class="lg:col-span-7 space-y-4">
+                            <div>
+                                <span class="text-xs uppercase font-bold tracking-widest text-brand-maroon bg-amber-100 px-3 py-1 rounded-full">
+                                    How It Works
+                                </span>
+                                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-brand-maroon mt-2.5">
+                                    Curd Churning vs Direct Cream Boiling
+                                </h3>
+                                <p class="text-stone-600 text-xs sm:text-sm mt-1.5 leading-relaxed">
+                                    Unlike commercial ghee produced by boiling raw industrial cream, traditional Bilona extracts pure butterfat naturally through cultured curd.
+                                </p>
+                            </div>
+
+                            <!-- Simplified 3-Step Flow -->
+                            <div class="space-y-3 pt-1">
+                                <div class="p-4 rounded-2xl bg-[#FFFDF9] border border-amber-200/80 shadow-sm flex items-start gap-3.5">
+                                    <div class="w-8 h-8 rounded-full bg-brand-maroon text-amber-100 text-xs font-bold flex items-center justify-center shrink-0">1</div>
+                                    <div>
+                                        <h4 class="font-bold text-sm text-brand-maroon">Curd Fermentation (Dahi Jamana)</h4>
+                                        <p class="text-xs text-stone-600 mt-0.5">Whole pure milk is boiled slowly and allowed to naturally ferment overnight into curd in clay vessels, activating beneficial gut microbes.</p>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-2xl bg-[#FFFDF9] border border-amber-200/80 shadow-sm flex items-start gap-3.5">
+                                    <div class="w-8 h-8 rounded-full bg-brand-maroon text-amber-100 text-xs font-bold flex items-center justify-center shrink-0">2</div>
+                                    <div>
+                                        <h4 class="font-bold text-sm text-brand-maroon">Two-Way Wooden Mathani Churning</h4>
+                                        <p class="text-xs text-stone-600 mt-0.5">The curd is churned bi-directionally using a wooden pestle. This gentle mechanical motion isolates fresh Vedic Makkhan (butter) without heating the fats.</p>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-2xl bg-[#FFFDF9] border border-amber-200/80 shadow-sm flex items-start gap-3.5">
+                                    <div class="w-8 h-8 rounded-full bg-brand-maroon text-amber-100 text-xs font-bold flex items-center justify-center shrink-0">3</div>
+                                    <div>
+                                        <h4 class="font-bold text-sm text-brand-maroon">Slow Fire Clarification</h4>
+                                        <p class="text-xs text-stone-600 mt-0.5">Separated makkhan is melted on a mild cow dung / wood flame until moisture evaporates, leaving behind golden, aromatic, and granular (danedar) ghee.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Benefits Grid -->
+                <div class="mt-8">
+                    <div class="text-center mb-8">
+                        <span class="text-xs uppercase font-bold tracking-widest text-brand-gold bg-brand-maroon px-3 py-1 rounded-full">Ayurvedic Wellness</span>
+                        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-brand-maroon mt-2">Health Benefits of Bilona Ghee</h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <div class="bg-white p-5 rounded-2xl border border-stone-200/80 shadow-sm hover:border-amber-400 transition">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-brand-maroon flex items-center justify-center text-lg mb-3">🫄</div>
+                            <h4 class="font-bold text-sm text-brand-maroon mb-1">Easy on Digestion</h4>
+                            <p class="text-xs text-stone-600 leading-relaxed">Rich in natural Butyric Acid that nourishes intestinal lining and supports easy absorption even for lactose-sensitive stomachs.</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-stone-200/80 shadow-sm hover:border-amber-400 transition">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-brand-maroon flex items-center justify-center text-lg mb-3">🛡️</div>
+                            <h4 class="font-bold text-sm text-brand-maroon mb-1">Boosts Natural Immunity</h4>
+                            <p class="text-xs text-stone-600 leading-relaxed">Packed with fat-soluble vitamins A, D, E, and K that strengthen internal immunity and nourish brain tissues (Dhi & Smriti).</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-stone-200/80 shadow-sm hover:border-amber-400 transition">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-brand-maroon flex items-center justify-center text-lg mb-3">🔥</div>
+                            <h4 class="font-bold text-sm text-brand-maroon mb-1">High Smoke Point (250°C)</h4>
+                            <p class="text-xs text-stone-600 leading-relaxed">Does not break down into toxic free radicals or carcinogens during high-heat Indian tadka, sautéing, or roti roasting.</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-stone-200/80 shadow-sm hover:border-amber-400 transition">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-brand-maroon flex items-center justify-center text-lg mb-3">✨</div>
+                            <h4 class="font-bold text-sm text-brand-maroon mb-1">Joints & Radiant Skin</h4>
+                            <p class="text-xs text-stone-600 leading-relaxed">Acts as a natural lubricant for bones and joints while promoting skin hydration and a healthy natural glow.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5-Stage Visual Stepper -->
+                <div class="mt-14 pt-10 border-t border-amber-900/10">
+                    <div class="text-center mb-8">
+                        <span class="text-xs uppercase font-bold tracking-widest text-stone-500">Traditional Lifecycle</span>
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-brand-maroon mt-1">The 5 Sacred Stages of Bilona</h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                        <div class="bg-white p-5 rounded-2xl shadow-sm border border-stone-200/80 text-center relative flex flex-col items-center">
+                            <span class="absolute -top-3 bg-brand-maroon text-amber-200 text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center">1</span>
+                            <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-xl text-amber-700 mb-3 mt-1">🐄</div>
+                            <h4 class="font-bold text-brand-maroon text-xs sm:text-sm mb-1">Raw Pure Milk</h4>
+                            <p class="text-[11px] text-stone-500">Collected daily from naturally-fed desi livestock.</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl shadow-sm border border-stone-200/80 text-center relative flex flex-col items-center">
+                            <span class="absolute -top-3 bg-brand-maroon text-amber-200 text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center">2</span>
+                            <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-xl text-amber-700 mb-3 mt-1">🥣</div>
+                            <h4 class="font-bold text-brand-maroon text-xs sm:text-sm mb-1">Earthen Pot Curd</h4>
+                            <p class="text-[11px] text-stone-500">Boiled & naturally fermented into rich probiotic dahi.</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl shadow-sm border border-brand-gold text-center relative flex flex-col items-center ring-1 ring-brand-gold">
+                            <span class="absolute -top-3 bg-brand-gold text-brand-deepMaroon text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center shadow">3</span>
+                            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-xl text-brand-maroon mb-3 mt-1">🏺</div>
+                            <h4 class="font-bold text-brand-maroon text-xs sm:text-sm mb-1">Bilona Churning</h4>
+                            <p class="text-[11px] text-stone-500">Wooden mathani churns out pure fresh makkhan.</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl shadow-sm border border-stone-200/80 text-center relative flex flex-col items-center">
+                            <span class="absolute -top-3 bg-brand-maroon text-amber-200 text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center">4</span>
+                            <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-xl text-amber-700 mb-3 mt-1">🔥</div>
+                            <h4 class="font-bold text-brand-maroon text-xs sm:text-sm mb-1">Gentle Simmer</h4>
+                            <p class="text-[11px] text-stone-500">Clarified on mild slow fire to develop golden aroma.</p>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl shadow-sm border border-stone-200/80 text-center relative flex flex-col items-center">
+                            <span class="absolute -top-3 bg-brand-maroon text-amber-200 text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center">5</span>
+                            <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center text-xl text-amber-700 mb-3 mt-1">✨</div>
+                            <h4 class="font-bold text-brand-maroon text-xs sm:text-sm mb-1">Danedar Ghee</h4>
+                            <p class="text-[11px] text-stone-500">Strained into authentic grainy liquid gold.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 4: PRODUCTS -->
+        <section id="products" class="scroll-mt-24 py-16 lg:py-24 bg-brand-cream border-b border-amber-900/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-xs uppercase font-bold tracking-widest text-amber-800 bg-amber-200/60 px-3 py-1 rounded-full">Artisanal Small Batches</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-maroon mt-3 mb-3">Our Handcrafted Varieties</h2>
+                    <p class="text-stone-600 text-sm">Select your ghee variety, choose jar size, and checkout directly on WhatsApp.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Cow Ghee -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 border border-amber-900/10 shadow-lg hover:shadow-2xl transition duration-300 flex flex-col justify-between relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 bg-brand-gold text-brand-deepMaroon text-[11px] font-extrabold uppercase px-4 py-1.5 rounded-bl-2xl shadow-sm tracking-wider">
+                            Bestseller ⭐
+                        </div>
+                        <div>
+                            <div class="w-full h-52 bg-[#F9F5EA] rounded-2xl border-2 border-dashed border-amber-300 flex items-center justify-center p-4 mb-6 relative">
+                                <div class="w-40 h-40 rounded-full border-4 border-amber-800/40 p-2 flex flex-col items-center justify-center text-center bg-white shadow-inner">
+                                    <span class="text-[9px] uppercase tracking-widest font-bold text-stone-500">Modinagar</span>
+                                    <h3 class="font-serif font-black text-brand-maroon text-base leading-tight">BILONA & CO.</h3>
+                                    <div class="w-8 h-0.5 bg-amber-500 my-1"></div>
+                                    <span class="text-xs font-bold text-amber-800 uppercase tracking-wider">COW GHEE</span>
+                                    <span class="text-[9px] text-emerald-700 font-semibold mt-1">100% PURE A2</span>
+                                    <span class="text-[8px] text-stone-400">Made from Curd</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded-md">Vedic Bilona</span>
+                                <span class="text-stone-400 text-xs">• Golden & Aromatic</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-2xl text-brand-maroon mb-2">100% Fresh Desi Cow Ghee</h3>
+                            <p class="text-stone-600 text-xs sm:text-sm mb-4 leading-relaxed">
+                                Rich in fat-soluble vitamins (A, D, E, K), easily digestible, and packed with gut-nurturing butyric acid. Ideal for children, pregnant mothers, and daily immunity.
+                            </p>
+
+                            <div class="mb-6">
+                                <label class="text-xs font-semibold text-stone-700 block mb-2">Choose Quantity:</label>
+                                <div class="grid grid-cols-2 gap-2" id="cow-qty-buttons">
+                                    <button type="button" onclick="selectQty('cow', 500, 849, this)" class="qty-btn-cow border-2 border-brand-maroon bg-brand-maroon text-white font-bold py-2 px-3 rounded-xl text-xs flex justify-between items-center transition">
+                                        <span>500 ml</span>
+                                        <span>₹849</span>
+                                    </button>
+                                    <button type="button" onclick="selectQty('cow', 1000, 1599, this)" class="qty-btn-cow border border-stone-300 hover:border-brand-maroon font-bold py-2 px-3 rounded-xl text-xs flex justify-between items-center transition">
+                                        <span>1000 ml (1L)</span>
+                                        <span>₹1,599</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-stone-100 flex items-center justify-between gap-4">
+                            <div>
+                                <span class="text-[10px] text-stone-500 block uppercase tracking-wide">Selected Total</span>
+                                <span id="cow-price-display" class="text-2xl font-black text-brand-deepMaroon">₹849</span>
+                            </div>
+                            <button id="cow-order-btn" onclick="orderItem('100% Desi Cow Ghee', '500ml', '849')" class="flex-1 bg-brand-maroon hover:bg-brand-deepMaroon text-amber-100 py-3 px-4 rounded-xl font-bold text-xs uppercase tracking-wider transition flex items-center justify-center gap-2 shadow">
+                                <i class="fa-brands fa-whatsapp text-sm text-[#25D366]"></i>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Buffalo Ghee -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 border border-amber-900/10 shadow-lg hover:shadow-2xl transition duration-300 flex flex-col justify-between relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 bg-stone-800 text-amber-200 text-[11px] font-extrabold uppercase px-4 py-1.5 rounded-bl-2xl shadow-sm tracking-wider">
+                            High Energy 💪
+                        </div>
+                        <div>
+                            <div class="w-full h-52 bg-[#F6F6F6] rounded-2xl border-2 border-dashed border-stone-300 flex items-center justify-center p-4 mb-6 relative">
+                                <div class="w-40 h-40 rounded-full border-4 border-stone-700/40 p-2 flex flex-col items-center justify-center text-center bg-white shadow-inner">
+                                    <span class="text-[9px] uppercase tracking-widest font-bold text-stone-500">Modinagar</span>
+                                    <h3 class="font-serif font-black text-stone-900 text-base leading-tight">BILONA & CO.</h3>
+                                    <div class="w-8 h-0.5 bg-stone-700 my-1"></div>
+                                    <span class="text-xs font-bold text-stone-800 uppercase tracking-wider">BUFFALO GHEE</span>
+                                    <span class="text-[9px] text-emerald-700 font-semibold mt-1">100% PURE BILONA</span>
+                                    <span class="text-[8px] text-stone-400">Danedar & Creamy</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="bg-stone-200 text-stone-800 text-[10px] font-bold px-2 py-0.5 rounded-md">Vedic Bilona</span>
+                                <span class="text-stone-400 text-xs">• Pure White Grain</span>
+                            </div>
+                            <h3 class="font-serif font-bold text-2xl text-brand-maroon mb-2">100% Fresh Buffalo Ghee</h3>
+                            <p class="text-stone-600 text-xs sm:text-sm mb-4 leading-relaxed">
+                                Full-bodied, ultra-granular texture with exceptional calcium and phosphorus. Favored for robust physical stamina, bodybuilding, desserts, and traditional halwas.
+                            </p>
+
+                            <div class="mb-6">
+                                <label class="text-xs font-semibold text-stone-700 block mb-2">Choose Quantity:</label>
+                                <div class="grid grid-cols-2 gap-2" id="buffalo-qty-buttons">
+                                    <button type="button" onclick="selectQty('buffalo', 500, 799, this)" class="qty-btn-buffalo border-2 border-brand-maroon bg-brand-maroon text-white font-bold py-2 px-3 rounded-xl text-xs flex justify-between items-center transition">
+                                        <span>500 ml</span>
+                                        <span>₹799</span>
+                                    </button>
+                                    <button type="button" onclick="selectQty('buffalo', 1000, 1499, this)" class="qty-btn-buffalo border border-stone-300 hover:border-brand-maroon font-bold py-2 px-3 rounded-xl text-xs flex justify-between items-center transition">
+                                        <span>1000 ml (1L)</span>
+                                        <span>₹1,499</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-stone-100 flex items-center justify-between gap-4">
+                            <div>
+                                <span class="text-[10px] text-stone-500 block uppercase tracking-wide">Selected Total</span>
+                                <span id="buffalo-price-display" class="text-2xl font-black text-brand-deepMaroon">₹799</span>
+                            </div>
+                            <button id="buffalo-order-btn" onclick="orderItem('100% Fresh Buffalo Ghee', '500ml', '799')" class="flex-1 bg-brand-maroon hover:bg-brand-deepMaroon text-amber-100 py-3 px-4 rounded-xl font-bold text-xs uppercase tracking-wider transition flex items-center justify-center gap-2 shadow">
+                                <i class="fa-brands fa-whatsapp text-sm text-[#25D366]"></i>
+                                <span>Order on WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <p class="text-sm text-stone-600">Prefer entering your complete delivery address directly? 
+                        <a href="#order" class="text-brand-maroon font-bold underline ml-1">Go to Order Form below ↓</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: REVIEWS -->
+        <section id="reviews" class="scroll-mt-24 py-16 lg:py-24 bg-brand-warmGray border-b border-amber-900/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <span class="text-xs uppercase font-bold tracking-widest text-amber-800 bg-amber-200/60 px-3 py-1 rounded-full">Customer Love</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-maroon mt-3 mb-3">Purity You Can Taste</h2>
+                    <p class="text-stone-600 text-sm">Hear from families across India who switched back to authentic Vedic Bilona Ghee.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200/80 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-xs gap-1 mb-3">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-stone-700 text-xs sm:text-sm italic mb-4">
+                                "The grain (danedaar nature) and aroma reminded me of my nani's house in Haryana. The handwritten note inside the box felt so genuine and warm. Definitely ordering again!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-3 border-t border-stone-100">
+                            <div class="w-9 h-9 rounded-full bg-brand-maroon text-amber-200 font-bold flex items-center justify-center text-xs">PS</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-stone-900">Pooja Sharma</h4>
+                                <span class="text-[10px] text-stone-400">Delhi NCR • Cow Ghee Buyer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200/80 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-xs gap-1 mb-3">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-stone-700 text-xs sm:text-sm italic mb-4">
+                                "Tried their Buffalo Ghee for halwa and parathas. Absolutely phenomenal flavor and heavy richness. Genuine 100% bilona ghee without artificial smells."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-3 border-t border-stone-100">
+                            <div class="w-9 h-9 rounded-full bg-brand-gold text-stone-900 font-bold flex items-center justify-center text-xs">AK</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-stone-900">Amit Kumar</h4>
+                                <span class="text-[10px] text-stone-400">Meerut • Buffalo Ghee 1L</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200/80 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-xs gap-1 mb-3">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-stone-700 text-xs sm:text-sm italic mb-4">
+                                "Super easy ordering via WhatsApp. They dispatched from Modinagar and it reached Noida the very next afternoon safe and leak-proof."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-3 border-t border-stone-100">
+                            <div class="w-9 h-9 rounded-full bg-emerald-800 text-white font-bold flex items-center justify-center text-xs">RV</div>
+                            <div>
+                                <h4 class="font-bold text-xs text-stone-900">Ritu Verma</h4>
+                                <span class="text-[10px] text-stone-400">Noida • Regular Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: ORDER FORM -->
+        <section id="order" class="scroll-mt-24 py-16 lg:py-24 bg-pattern text-amber-50">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-brand-deepMaroon/95 border border-brand-gold/30 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-md">
+                    <div class="text-center mb-8">
+                        <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Direct Delivery</span>
+                        <h2 class="font-serif text-3xl font-bold mt-1 text-white">Place Your Order</h2>
+                        <p class="text-xs sm:text-sm text-amber-100/70 mt-2">Fill the form to instantly generate a WhatsApp message to our Modinagar unit.</p>
+                    </div>
+
+                    <form id="orderForm" onsubmit="submitForm(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-amber-200 mb-1">Your Full Name</label>
+                                <input type="text" id="custName" required placeholder="e.g. Rahul Sharma" class="w-full bg-black/30 border border-amber-900/40 rounded-xl px-4 py-3 text-sm text-white placeholder-stone-400 focus:outline-none focus:border-brand-gold">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-amber-200 mb-1">Mobile / WhatsApp Number</label>
+                                <input type="tel" id="custPhone" required placeholder="e.g. 9876543210" class="w-full bg-black/30 border border-amber-900/40 rounded-xl px-4 py-3 text-sm text-white placeholder-stone-400 focus:outline-none focus:border-brand-gold">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-amber-200 mb-1">Select Variety</label>
+                                <select id="custProduct" class="w-full bg-brand-deepMaroon border border-amber-900/40 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold">
+                                    <option value="100% Desi Cow Ghee">100% Desi Cow Ghee</option>
+                                    <option value="100% Fresh Buffalo Ghee">100% Fresh Buffalo Ghee</option>
+                                    <option value="Combo: Both Cow + Buffalo Ghee">Combo: Cow + Buffalo Ghee</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-amber-200 mb-1">Quantity</label>
+                                <select id="custSize" class="w-full bg-brand-deepMaroon border border-amber-900/40 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-gold">
+                                    <option value="500ml">500 ml Jar</option>
+                                    <option value="1000ml (1 Litre)">1000 ml (1 Litre)</option>
+                                    <option value="2 Litres (Special Family Pack)">2 Litres (Family Pack)</option>
+                                    <option value="Bulk / Custom">Bulk / Custom Quantity</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-amber-200 mb-1">Delivery Address & Pin Code</label>
+                            <textarea id="custAddress" rows="3" required placeholder="House No, Street, City, State & Pincode" class="w-full bg-black/30 border border-amber-900/40 rounded-xl px-4 py-3 text-sm text-white placeholder-stone-400 focus:outline-none focus:border-brand-gold"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-brand-deepMaroon font-extrabold py-3.5 rounded-xl uppercase tracking-wider text-sm shadow-lg transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Send Order to WhatsApp (+91 7302882134)</span>
+                        </button>
+                    </form>
+
+                    <div class="mt-8 pt-6 border-t border-amber-900/50 flex flex-wrap items-center justify-between gap-4 text-xs text-amber-200/80">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-brand-gold"></i>
+                            <span>Call directly: <strong>+91 7302882134</strong></span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brand-gold"></i>
+                            <span>Modinagar, Uttar Pradesh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#24080B] text-amber-100/70 py-12 border-t border-amber-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="space-y-3">
+                    <a href="#home" class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-full bg-brand-maroon border border-brand-gold flex items-center justify-center">
+                            <span class="text-[9px] font-bold text-brand-gold">B&C</span>
+                        </div>
+                        <span class="font-serif font-bold text-white text-lg">Bilona & Co.</span>
+                    </a>
+                    <p class="text-xs text-stone-400 leading-relaxed">
+                        Dadi ki Rasoi se seedha aapki thali mein. 100% fresh, authentic desi cow & buffalo ghee crafted in Modinagar using traditional bilona churning.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-brand-gold mb-3">Our Offerings</h4>
+                    <ul class="text-xs space-y-2">
+                        <li><a href="#products" class="hover:text-white transition">100% Desi Cow Ghee (A2)</a></li>
+                        <li><a href="#products" class="hover:text-white transition">100% Pure Buffalo Ghee</a></li>
+                        <li><a href="#process" class="hover:text-white transition">Traditional Vedic Bilona Method</a></li>
+                        <li><a href="#order" class="hover:text-white transition">Custom & Bulk Orders</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-brand-gold mb-3">Page Sections</h4>
+                    <ul class="text-xs space-y-2">
+                        <li><a href="#home" class="hover:text-white transition">1. Home</a></li>
+                        <li><a href="#story" class="hover:text-white transition">2. Our Story & Note</a></li>
+                        <li><a href="#process" class="hover:text-white transition">3. Vedic 5-Step Process</a></li>
+                        <li><a href="#products" class="hover:text-white transition">4. Products & Jars</a></li>
+                        <li><a href="#reviews" class="hover:text-white transition">5. Customer Reviews</a></li>
+                        <li><a href="#order" class="hover:text-white transition">6. Direct Order Form</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-brand-gold mb-3">Reach Out</h4>
+                    <p class="text-xs text-stone-400 mb-2">Modinagar, Uttar Pradesh, India</p>
+                    <p class="text-xs text-stone-300 font-bold mb-2">
+                        <i class="fa-solid fa-phone text-brand-gold mr-1"></i> +91 7302882134
+                    </p>
+                    <div class="flex gap-3 pt-2">
+                        <a href="https://instagram.com/bilona_co" target="_blank" class="w-8 h-8 rounded-full bg-white/10 hover:bg-pink-600 text-white flex items-center justify-center transition">
+                            <i class="fa-brands fa-instagram text-xs"></i>
+                        </a>
+                        <a href="https://wa.me/917302882134" target="_blank" class="w-8 h-8 rounded-full bg-white/10 hover:bg-emerald-600 text-white flex items-center justify-center transition">
+                            <i class="fa-brands fa-whatsapp text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-500 gap-2">
+                <p>© <span id="currentYear"></span> Bilona & Co. All Rights Reserved. Pure Homemade Desi Ghee.</p>
+                <p>Crafted for purity & health.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Sticky Order Pill for Mobile -->
+    <div class="fixed bottom-4 left-4 right-4 sm:hidden z-40">
+        <a href="#order" class="w-full bg-[#25D366] text-white py-3.5 px-4 rounded-full font-bold text-sm shadow-2xl flex items-center justify-center gap-2 border border-white/20">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Order Pure Ghee (WhatsApp)</span>
+        </a>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Set dynamic year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Scrollspy to dynamically update active navigation tab in chronological order
+        const sections = ['home', 'story', 'process', 'products', 'reviews', 'order'];
+        window.addEventListener('scroll', () => {
+            let current = 'home';
+            const scrollY = window.pageYOffset;
+
+            sections.forEach(id => {
+                const section = document.getElementById(id);
+                if (section) {
+                    const sectionTop = section.offsetTop - 120;
+                    if (scrollY >= sectionTop) {
+                        current = id;
+                    }
+                }
+            });
+
+            sections.forEach(id => {
+                const link = document.getElementById(`navlink-${id}`);
+                if (link) {
+                    if (id === current) {
+                        link.className = "nav-item px-3.5 py-1.5 rounded-full transition-all duration-200 bg-brand-maroon text-amber-100 shadow-sm";
+                    } else {
+                        link.className = "nav-item px-3.5 py-1.5 rounded-full transition-all duration-200 hover:text-brand-maroon text-stone-700";
+                    }
+                }
+            });
+        });
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // State trackers for product quantity & pricing
+        const productState = {
+            cow: { size: '500ml', price: '849' },
+            buffalo: { size: '500ml', price: '799' }
+        };
+
+        function selectQty(product, sizeMl, price, buttonElem) {
+            const sizeLabel = sizeMl >= 1000 ? `${sizeMl/1000}L` : `${sizeMl}ml`;
+            productState[product].size = sizeLabel;
+            productState[product].price = price.toString();
+
+            // Update UI buttons styling
+            const buttons = document.querySelectorAll(`.qty-btn-${product}`);
+            buttons.forEach(btn => {
+                btn.className = `qty-btn-${product} border border-stone-300 hover:border-brand-maroon font-bold py-2 px-3 rounded-xl text-xs flex justify-between items-center transition text-stone-700 bg-white`;
+            });
+            buttonElem.className = `qty-btn-${product} border-2 border-brand-maroon bg-brand-maroon text-white font-bold py-2 px-3 rounded-xl text-xs flex justify-between items-center transition`;
+
+            // Update price display
+            document.getElementById(`${product}-price-display`).textContent = `₹${price}`;
+        }
+
+        function orderItem(name, fallbackSize, fallbackPrice) {
+            const key = name.toLowerCase().includes('cow') ? 'cow' : 'buffalo';
+            const size = productState[key].size || fallbackSize;
+            const price = productState[key].price || fallbackPrice;
+
+            const text = `Hello Bilona & Co.! I would like to order:
+- Item: ${name}
+- Size: ${size}
+- Price: ₹${price}
+
+Please share payment details and dispatch estimate. Thank you!`;
+
+            const encoded = encodeURIComponent(text);
+            window.open(`https://wa.me/917302882134?text=${encoded}`, '_blank');
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            const name = document.getElementById('custName').value.trim();
+            const phone = document.getElementById('custPhone').value.trim();
+            const product = document.getElementById('custProduct').value;
+            const size = document.getElementById('custSize').value;
+            const address = document.getElementById('custAddress').value.trim();
+
+            const text = `*New Order - Bilona & Co.*
+------------------------
+*Customer Name:* ${name}
+*Contact:* ${phone}
+*Product:* ${product}
+*Quantity:* ${size}
+*Address:* ${address}
+------------------------
+Please confirm my order.`;
+
+            const encoded = encodeURIComponent(text);
+            window.open(`https://wa.me/917302882134?text=${encoded}`, '_blank');
+        }
+    </script>
+</body>
+</html>
