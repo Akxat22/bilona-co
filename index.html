@@ -14,19 +14,19 @@
     <meta name="author" content="Bilona & Co.">
     <link rel="canonical" href="https://bilonaco.in/">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook (Absolute URLs for Social Crawlers) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bilonaco.in/">
     <meta property="og:title" content="Bilona & Co. | Authentic Vedic Bilona Ghee from Modinagar">
     <meta property="og:description" content="Handcrafted Vedic Desi Cow & Buffalo Ghee made from cultured curd in clay pots. Free Pan-India Delivery on orders above ₹999.">
-    <meta property="og:image" content="images/cow-ghee.png">
+    <meta property="og:image" content="https://bilonaco.in/images/cow-ghee.png">
 
-    <!-- Twitter Cards -->
+    <!-- Twitter Cards (Absolute URLs) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://bilonaco.in/">
     <meta name="twitter:title" content="Bilona & Co. | Traditional Bilona Cow & Buffalo Ghee">
     <meta name="twitter:description" content="Dadi ki rasoi se seedha aapki thali mein. 100% pure traditional Bilona Ghee made in Modinagar.">
-    <meta name="twitter:image" content="images/cow-ghee.png">
+    <meta name="twitter:image" content="https://bilonaco.in/images/cow-ghee.png">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -201,7 +201,7 @@
         }
     </style>
 
-    <!-- Structured Data (JSON-LD): Organization & Product Schemas -->
+    <!-- Structured Data (JSON-LD): Organization & Product Schemas with Absolute URLs -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -210,8 +210,8 @@
           "@type": "Organization",
           "@id": "https://bilonaco.in/#organization",
           "name": "Bilona & Co.",
-          "url": "https://bilonaco.in",
-          "logo": "images/logo.png",
+          "url": "https://bilonaco.in/",
+          "logo": "https://bilonaco.in/images/logo.png",
           "description": "Artisanal producers of 100% pure traditional Vedic Bilona Desi Cow Ghee and Buffalo Ghee.",
           "telephone": "+917302882134",
           "address": {
@@ -229,7 +229,7 @@
           "@type": "Product",
           "@id": "https://bilonaco.in/#cow-ghee",
           "name": "Bilona & Co. Traditional Desi Cow Ghee (A2)",
-          "image": "images/cow-ghee.png",
+          "image": "https://bilonaco.in/images/cow-ghee.png",
           "description": "Slow-churned pure A2 Desi Cow Ghee prepared via the ancient wooden Bilona method from curd.",
           "brand": {
             "@type": "Brand",
@@ -239,15 +239,15 @@
             "@type": "AggregateOffer",
             "priceCurrency": "INR",
             "lowPrice": "849",
-            "highPrice": "1599",
-            "offerCount": "2"
+            "highPrice": "3198",
+            "offerCount": "3"
           }
         },
         {
           "@type": "Product",
           "@id": "https://bilonaco.in/#buffalo-ghee",
           "name": "Bilona & Co. Traditional Buffalo Ghee",
-          "image": "images/buffalo-ghee.png",
+          "image": "https://bilonaco.in/images/buffalo-ghee.png",
           "description": "Rich, creamy, ultra-danedar Buffalo Ghee churned from earthen pot curd using wooden mathani.",
           "brand": {
             "@type": "Brand",
@@ -260,6 +260,24 @@
             "highPrice": "6999",
             "offerCount": "6"
           }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://bilonaco.in/#combo-pack",
+          "name": "Bilona & Co. Cow & Buffalo Ghee Sampler Combo",
+          "image": "https://bilonaco.in/images/cow-ghee.png",
+          "description": "Dual-jar Vedic Bilona Ghee sampler combining Desi Cow Ghee and Buffalo Ghee with Free Pan-India Delivery.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Bilona & Co."
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "INR",
+            "lowPrice": "1648",
+            "highPrice": "3098",
+            "offerCount": "2"
+          }
         }
       ]
     }
@@ -267,7 +285,7 @@
 </head>
 <body class="bg-brand-cream text-brand-charcoal font-sans antialiased selection:bg-brand-gold selection:text-brand-deepMaroon flex flex-col min-h-screen">
 
-    <!-- Top Announcement Bar (Relative Flow to Prevent Header Overlap) -->
+    <!-- Top Announcement Bar -->
     <div class="w-full bg-[#3b0b10] text-[#D4AF37] text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide z-50 relative border-b border-brand-gold/20">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 text-center font-medium">
             <div class="flex items-center gap-2 mx-auto sm:mx-0">
@@ -282,7 +300,7 @@
         </div>
     </div>
 
-    <!-- Main Navigation Header (Clean Separation from Top Bar) -->
+    <!-- Main Navigation Header -->
     <header class="sticky top-0 z-40 bg-brand-cream border-b border-[#F5EFEB] shadow-sm backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 sm:h-20">
@@ -300,7 +318,7 @@
                     </div>
                 </a>
 
-                <!-- Desktop Navigation (Explicitly Hidden on Mobile) -->
+                <!-- Desktop Navigation -->
                 <nav aria-label="Main Navigation" class="hidden md:flex items-center gap-1 bg-brand-warmGray/80 p-1.5 rounded-full border border-amber-900/10 text-xs font-semibold text-stone-700">
                     <a href="#home" id="navlink-home" class="nav-item px-3.5 py-1.5 rounded-full transition-all duration-200 bg-brand-maroon text-amber-100 shadow-sm">Home</a>
                     <a href="#story" id="navlink-story" class="nav-item px-3.5 py-1.5 rounded-full transition-all duration-200 hover:text-brand-maroon">Our Story</a>
@@ -314,22 +332,22 @@
                 <!-- Action Buttons: Cart, WhatsApp & Mobile Hamburger -->
                 <div class="flex items-center gap-2 sm:gap-3">
                     <!-- Cart Trigger -->
-                    <button type="button" onclick="CartManager.toggleDrawer(true)" class="relative p-2 sm:px-3 sm:py-2 rounded-full bg-white border border-amber-900/15 hover:border-brand-maroon text-brand-maroon shadow-sm hover:shadow transition flex items-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-brand-gold" aria-label="Open Shopping Cart Drawer">
-                        <i class="fa-solid fa-basket-shopping text-sm sm:text-base"></i>
+                    <button type="button" id="headerCartBtn" onclick="CartManager.toggleDrawer(true, this)" class="relative p-2 sm:px-3 sm:py-2 rounded-full bg-white border border-amber-900/15 hover:border-brand-maroon text-brand-maroon shadow-sm hover:shadow transition flex items-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-brand-gold" aria-label="Open Shopping Cart Drawer" aria-controls="cartDrawer">
+                        <i class="fa-solid fa-basket-shopping text-sm sm:text-base" aria-hidden="true"></i>
                         <span class="hidden sm:inline text-xs font-bold uppercase tracking-wider">Cart</span>
                         <span id="headerCartCountBadge" class="w-5 h-5 rounded-full bg-brand-maroon text-amber-200 text-[11px] font-black flex items-center justify-center">0</span>
                     </button>
 
                     <!-- WhatsApp CTA -->
                     <a href="https://wa.me/917302882134?text=Namaste%20Bilona%20%26%20Co.!%20I%20would%20like%20to%20order%20pure%20Vedic%20Bilona%20ghee." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white px-3.5 py-2 rounded-full text-xs font-bold shadow-md hover:shadow-lg transition shrink-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#25D366]">
-                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <i class="fa-brands fa-whatsapp text-sm" aria-hidden="true"></i>
                         <span>WhatsApp Order</span>
                     </a>
 
                     <!-- Mobile Hamburger Button -->
                     <button type="button" id="mobileNavToggle" onclick="NavigationManager.toggleMobileMenu()" class="flex md:hidden text-brand-maroon p-2 rounded-lg hover:bg-amber-100/50 focus:outline-none focus:ring-2 focus:ring-brand-gold" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle navigation menu">
-                        <i id="hamburgerIcon" class="fa-solid fa-bars text-xl"></i>
-                        <i id="closeIcon" class="fa-solid fa-xmark text-xl hidden"></i>
+                        <i id="hamburgerIcon" class="fa-solid fa-bars text-xl" aria-hidden="true"></i>
+                        <i id="closeIcon" class="fa-solid fa-xmark text-xl hidden" aria-hidden="true"></i>
                     </button>
                 </div>
 
@@ -341,7 +359,7 @@
             <a href="#home" onclick="NavigationManager.closeMobileMenu()" class="block w-full font-semibold text-brand-maroon py-2.5 border-b border-stone-200/60">🏠 Home</a>
             <a href="#story" onclick="NavigationManager.closeMobileMenu()" class="block w-full font-semibold text-brand-maroon py-2.5 border-b border-stone-200/60">📜 Our Story & Letter</a>
             <a href="#process" onclick="NavigationManager.closeMobileMenu()" class="block w-full font-semibold text-brand-maroon py-2.5 border-b border-stone-200/60">🏺 Vedic 5-Step Process</a>
-            <a href="#products" onclick="NavigationManager.closeMobileMenu()" class="block w-full font-semibold text-brand-maroon py-2.5 border-b border-stone-200/60">🛒 Products & Jars</a>
+            <a href="#products" onclick="NavigationManager.closeMobileMenu()" class="block w-full font-semibold text-brand-maroon py-2.5 border-b border-stone-200/60">🛒 Products, Combos & Jars</a>
             <a href="#faq" onclick="NavigationManager.closeMobileMenu()" class="block w-full font-semibold text-brand-maroon py-2.5 border-b border-stone-200/60">❓ FAQs</a>
             <a href="#reviews" onclick="NavigationManager.closeMobileMenu()" class="block w-full font-semibold text-brand-maroon py-2.5 border-b border-stone-200/60">⭐ Customer Reviews</a>
             <a href="#order" onclick="NavigationManager.closeMobileMenu()" class="block w-full font-semibold text-brand-maroon py-2.5">✍️ Direct Order Form</a>
@@ -349,7 +367,7 @@
             <div class="pt-3 border-t border-amber-900/15 flex items-center justify-between text-xs text-stone-600">
                 <span>Modinagar, Uttar Pradesh</span>
                 <a href="https://instagram.com/bilona_co" target="_blank" rel="noopener noreferrer" class="text-brand-maroon font-bold flex items-center gap-1.5 hover:underline">
-                    <i class="fa-brands fa-instagram text-sm"></i> @bilona_co
+                    <i class="fa-brands fa-instagram text-sm" aria-hidden="true"></i> @bilona_co
                 </a>
             </div>
         </div>
@@ -366,7 +384,7 @@
                     <!-- Left Hero Copy -->
                     <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                         <div class="inline-flex items-center gap-2 bg-brand-deepMaroon/90 border border-brand-gold/40 px-3.5 py-1.5 rounded-full text-xs font-semibold text-brand-lightGold tracking-wider uppercase shadow-sm">
-                            <i class="fa-solid fa-leaf text-brand-gold"></i>
+                            <i class="fa-solid fa-leaf text-brand-gold" aria-hidden="true"></i>
                             <span>100% Traditional Bilona Method • Zero Direct Cream Boiling</span>
                         </div>
 
@@ -382,27 +400,27 @@
                         <!-- Highlights Grid -->
                         <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-left max-w-lg mx-auto lg:mx-0 text-xs sm:text-sm">
                             <div class="flex items-center gap-2 text-amber-100 bg-white/5 p-2 rounded-lg border border-white/10">
-                                <i class="fa-solid fa-circle-check text-brand-gold text-xs"></i>
+                                <i class="fa-solid fa-circle-check text-brand-gold text-xs" aria-hidden="true"></i>
                                 <span>Cultured Dahi Bilona</span>
                             </div>
                             <div class="flex items-center gap-2 text-amber-100 bg-white/5 p-2 rounded-lg border border-white/10">
-                                <i class="fa-solid fa-circle-check text-brand-gold text-xs"></i>
+                                <i class="fa-solid fa-circle-check text-brand-gold text-xs" aria-hidden="true"></i>
                                 <span>Naturally Danedar</span>
                             </div>
                             <div class="flex items-center gap-2 text-amber-100 bg-white/5 p-2 rounded-lg border border-white/10">
-                                <i class="fa-solid fa-circle-check text-brand-gold text-xs"></i>
+                                <i class="fa-solid fa-circle-check text-brand-gold text-xs" aria-hidden="true"></i>
                                 <span>Modinagar Craft</span>
                             </div>
                             <div class="flex items-center gap-2 text-amber-100 bg-white/5 p-2 rounded-lg border border-white/10">
-                                <i class="fa-solid fa-circle-check text-brand-gold text-xs"></i>
+                                <i class="fa-solid fa-circle-check text-brand-gold text-xs" aria-hidden="true"></i>
                                 <span>No Synthetic Aroma</span>
                             </div>
                             <div class="flex items-center gap-2 text-amber-100 bg-white/5 p-2 rounded-lg border border-white/10">
-                                <i class="fa-solid fa-circle-check text-brand-gold text-xs"></i>
+                                <i class="fa-solid fa-circle-check text-brand-gold text-xs" aria-hidden="true"></i>
                                 <span>Hygienic Glass Jars</span>
                             </div>
                             <div class="flex items-center gap-2 text-amber-100 bg-white/5 p-2 rounded-lg border border-white/10">
-                                <i class="fa-solid fa-circle-check text-brand-gold text-xs"></i>
+                                <i class="fa-solid fa-circle-check text-brand-gold text-xs" aria-hidden="true"></i>
                                 <span>Pan-India Courier</span>
                             </div>
                         </div>
@@ -413,13 +431,13 @@
                                 Explore Products
                             </a>
                             <a href="#process" class="w-full sm:w-auto border border-amber-200/40 hover:bg-white/10 text-amber-100 font-semibold px-6 py-3.5 rounded-full transition text-center text-sm flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-play text-brand-gold text-xs"></i>
+                                <i class="fa-solid fa-play text-brand-gold text-xs" aria-hidden="true"></i>
                                 <span>Our Bilona Process</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Right Hero Product Showcase (Uses Server Image Path: images/cow-ghee.png) -->
+                    <!-- Right Hero Product Showcase -->
                     <div class="lg:col-span-5 flex justify-center">
                         <div class="relative w-full max-w-md">
                             <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-gold to-amber-600 rounded-3xl blur-md opacity-35" aria-hidden="true"></div>
@@ -549,7 +567,7 @@
                                 View Pure Ghee Jars
                             </a>
                             <a href="https://instagram.com/bilona_co" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-full text-xs sm:text-sm font-bold transition shadow hover:opacity-90">
-                                <i class="fa-brands fa-instagram text-base"></i>
+                                <i class="fa-brands fa-instagram text-base" aria-hidden="true"></i>
                                 <span>Follow @bilona_co</span>
                             </a>
                         </div>
@@ -861,27 +879,28 @@
             </div>
         </section>
 
-        <!-- SECTION 4: PRODUCTS SECTION -->
+        <!-- SECTION 4: PRODUCTS & MONTHLY CONSUMPTION ESTIMATOR -->
         <section id="products" class="scroll-mt-24 py-16 lg:py-24 bg-brand-cream border-b border-amber-900/10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-2xl mx-auto mb-14">
                     <span class="text-xs uppercase font-bold tracking-widest text-amber-800 bg-amber-200/60 px-3 py-1 rounded-full">Pure Small Batches</span>
                     <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-maroon mt-3 mb-3">Our Handcrafted Varieties</h2>
-                    <p class="text-stone-600 text-sm">Select your ghee variant, choose jar size, and add to cart or checkout immediately via WhatsApp.</p>
+                    <p class="text-stone-600 text-sm">Select your ghee variant, jar size, and pack count — add to cart or checkout immediately via WhatsApp.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- 3-Column Product Grid: Desi Cow Ghee, Buffalo Ghee & Sampler Combo -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
                     
                     <!-- PRODUCT 1: COW GHEE CARD -->
-                    <article id="product-card-cow" class="bg-white rounded-3xl p-6 sm:p-8 border border-amber-900/15 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
+                    <article id="product-card-cow" class="bg-white rounded-3xl p-6 border border-amber-900/15 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
                         <div class="absolute top-0 right-0 bg-brand-gold text-brand-deepMaroon text-[11px] font-extrabold uppercase px-4 py-1.5 rounded-bl-2xl shadow-sm tracking-wider z-10">
                             Bestseller ⭐
                         </div>
 
                         <div>
-                            <!-- Product Image Area (Server Path: images/cow-ghee.png) -->
+                            <!-- Product Image Area -->
                             <div class="w-full aspect-[4/3] bg-stone-100 rounded-2xl overflow-hidden mb-5 border border-stone-200 relative">
-                                <img src="images/cow-ghee.png" alt="Bilona & Co. Pure Desi Cow Ghee Glass Jar" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <img src="images/cow-ghee.png" alt="Bilona & Co. Pure Desi Cow Ghee Glass Jar" width="800" height="600" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
                                 <span class="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm text-stone-800 text-[10px] font-bold px-2.5 py-1 rounded-md border border-stone-200 shadow-sm">
                                     A2 Desi Cow Curd
                                 </span>
@@ -892,31 +911,35 @@
                                 <span class="text-stone-400 text-xs">• Golden Grain • Nutty Aroma</span>
                             </div>
 
-                            <h3 class="font-serif font-bold text-2xl text-brand-maroon mb-2">100% Fresh Desi Cow Ghee</h3>
+                            <h3 class="font-serif font-bold text-xl sm:text-2xl text-brand-maroon mb-2">100% Fresh Desi Cow Ghee</h3>
                             <p class="text-stone-600 text-xs sm:text-sm mb-4 leading-relaxed">
                                 Handcrafted from the whole milk of indigenous grass-fed desi cows. Cultured into dahi in earthen pots and slow-churned with a wooden mathani.
                             </p>
 
-                            <!-- Size Selector Buttons -->
-                            <div class="mb-5">
+                            <!-- Size Selector Buttons (Unified with CONFIG) -->
+                            <div class="mb-4">
                                 <label class="text-xs font-semibold text-stone-700 block mb-2">Select Quantity:</label>
-                                <div class="grid grid-cols-2 gap-2" role="group" aria-label="Cow Ghee Size Selection">
-                                    <button type="button" onclick="ProductManager.setVariant('cow', '500ml')" id="btn-cow-500ml" class="border-2 border-brand-maroon bg-brand-maroon text-white font-bold py-2.5 px-3 rounded-xl text-xs flex justify-between items-center transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
-                                        <span>500 ml</span>
-                                        <span>₹849</span>
+                                <div class="grid grid-cols-3 gap-2" role="group" aria-label="Cow Ghee Size Selection">
+                                    <button type="button" onclick="ProductManager.setVariant('cow', '500ml')" id="btn-cow-500ml" class="border-2 border-brand-maroon bg-brand-maroon text-white font-bold py-2 px-2 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                        <span class="text-[11px]">500 ml</span>
+                                        <span class="mt-0.5">₹849</span>
                                     </button>
-                                    <button type="button" onclick="ProductManager.setVariant('cow', '1000ml')" id="btn-cow-1000ml" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2.5 px-3 rounded-xl text-xs flex justify-between items-center transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
-                                        <span>1000 ml (1L)</span>
-                                        <span>₹1,599</span>
+                                    <button type="button" onclick="ProductManager.setVariant('cow', '1000ml')" id="btn-cow-1000ml" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                        <span class="text-[11px]">1000 ml (1L)</span>
+                                        <span class="mt-0.5">₹1,599</span>
+                                    </button>
+                                    <button type="button" onclick="ProductManager.setVariant('cow', '2000ml')" id="btn-cow-2000ml" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                        <span class="text-[11px]">2000 ml (2L)</span>
+                                        <span class="mt-0.5">₹3,198</span>
                                     </button>
                                 </div>
                             </div>
 
                             <!-- Expandable Specifications Accordion -->
-                            <div class="mb-5 border border-stone-200 rounded-xl overflow-hidden text-xs">
+                            <div class="mb-4 border border-stone-200 rounded-xl overflow-hidden text-xs">
                                 <button type="button" onclick="UIHelpers.toggleAccordion('cow-specs')" class="w-full bg-stone-50 px-3.5 py-2.5 text-left font-bold text-stone-700 flex justify-between items-center hover:bg-stone-100 transition focus:outline-none">
                                     <span>Product Details & Specifications</span>
-                                    <i id="icon-cow-specs" class="fa-solid fa-chevron-down text-stone-400 text-[10px]"></i>
+                                    <i id="icon-cow-specs" class="fa-solid fa-chevron-down text-stone-400 text-[10px]" aria-hidden="true"></i>
                                 </button>
                                 <div id="cow-specs" class="hidden p-3.5 bg-white space-y-2 border-t border-stone-200 text-stone-600">
                                     <div class="flex justify-between py-1 border-b border-stone-100">
@@ -931,10 +954,6 @@
                                         <span class="text-stone-400">Packaging:</span>
                                         <span class="font-medium text-stone-800">Food-Grade Glass Jar</span>
                                     </div>
-                                    <div class="flex justify-between py-1 border-b border-stone-100">
-                                        <span class="text-stone-400">Storage:</span>
-                                        <span class="font-medium text-stone-800">Store in a cool, dry place. Keep airtight.</span>
-                                    </div>
                                     <div class="flex justify-between py-1">
                                         <span class="text-stone-400">Origin:</span>
                                         <span class="font-medium text-stone-800">Modinagar, Uttar Pradesh</span>
@@ -943,25 +962,31 @@
                             </div>
                         </div>
 
-                        <!-- Price & Action CTA Buttons -->
+                        <!-- Price, Pack Counter & Action CTA Buttons -->
                         <div class="pt-4 border-t border-stone-100 space-y-3">
-                            <div class="flex items-center justify-between">
+                            <div class="flex items-center justify-between gap-2">
                                 <div>
                                     <span class="text-[10px] text-stone-500 block uppercase tracking-wide">Selected Price</span>
                                     <span id="cow-price-display" class="text-2xl font-black text-brand-deepMaroon">₹849</span>
                                 </div>
-                                <span class="text-xs text-emerald-700 font-bold bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
-                                    In Stock • Fresh Batch
-                                </span>
+                                <!-- Multi-pack Quantity Stepper -->
+                                <div class="flex items-center gap-1.5">
+                                    <span class="text-[10px] font-bold uppercase text-stone-500">Jars:</span>
+                                    <div class="flex items-center border border-stone-300 rounded-xl bg-stone-50 overflow-hidden">
+                                        <button type="button" onclick="ProductManager.adjustPackQty('cow', -1)" class="w-7 h-7 text-xs font-bold text-stone-700 hover:bg-stone-200 flex items-center justify-center focus:outline-none" aria-label="Decrease Cow Ghee pack quantity">-</button>
+                                        <span id="cow-pack-qty" class="w-7 text-center text-xs font-extrabold text-brand-maroon">1</span>
+                                        <button type="button" onclick="ProductManager.adjustPackQty('cow', 1)" class="w-7 h-7 text-xs font-bold text-stone-700 hover:bg-stone-200 flex items-center justify-center focus:outline-none" aria-label="Increase Cow Ghee pack quantity">+</button>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="grid grid-cols-2 gap-2">
                                 <button type="button" onclick="CartManager.addItem('cow')" class="bg-amber-100 hover:bg-amber-200 text-brand-maroon font-bold py-2.5 px-3 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-brand-maroon">
-                                    <i class="fa-solid fa-basket-shopping text-sm"></i>
+                                    <i class="fa-solid fa-basket-shopping text-sm" aria-hidden="true"></i>
                                     <span>Add to Cart</span>
                                 </button>
                                 <button type="button" onclick="CheckoutManager.buyNow('cow')" class="bg-brand-maroon hover:bg-brand-deepMaroon text-amber-100 font-bold py-2.5 px-3 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-1.5 shadow focus:outline-none focus:ring-2 focus:ring-brand-gold">
-                                    <i class="fa-brands fa-whatsapp text-sm text-[#25D366]"></i>
+                                    <i class="fa-brands fa-whatsapp text-sm text-[#25D366]" aria-hidden="true"></i>
                                     <span>Buy Now</span>
                                 </button>
                             </div>
@@ -969,15 +994,15 @@
                     </article>
 
                     <!-- PRODUCT 2: BUFFALO GHEE CARD -->
-                    <article id="product-card-buffalo" class="bg-white rounded-3xl p-6 sm:p-8 border border-amber-900/15 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
+                    <article id="product-card-buffalo" class="bg-white rounded-3xl p-6 border border-amber-900/15 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
                         <div class="absolute top-0 right-0 bg-stone-800 text-amber-200 text-[11px] font-extrabold uppercase px-4 py-1.5 rounded-bl-2xl shadow-sm tracking-wider z-10">
                             Traditional Richness ⚡
                         </div>
 
                         <div>
-                            <!-- Product Image Area (Server Path: images/buffalo-ghee.png) -->
+                            <!-- Product Image Area -->
                             <div class="w-full aspect-[4/3] bg-stone-100 rounded-2xl overflow-hidden mb-5 border border-stone-200 relative">
-                                <img src="images/buffalo-ghee.png" alt="Bilona & Co. Pure Buffalo Ghee Glass Jar" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+                                <img src="images/buffalo-ghee.png" alt="Bilona & Co. Pure Buffalo Ghee Glass Jar" width="800" height="600" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy">
                                 <span class="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm text-stone-800 text-[10px] font-bold px-2.5 py-1 rounded-md border border-stone-200 shadow-sm">
                                     Pure Buffalo Curd
                                 </span>
@@ -988,65 +1013,65 @@
                                 <span class="text-stone-400 text-xs">• White Grain • Rich Body</span>
                             </div>
 
-                            <h3 class="font-serif font-bold text-2xl text-brand-maroon mb-2">100% Fresh Buffalo Ghee</h3>
+                            <h3 class="font-serif font-bold text-xl sm:text-2xl text-brand-maroon mb-2">100% Fresh Buffalo Ghee</h3>
                             <p class="text-stone-600 text-xs sm:text-sm mb-4 leading-relaxed">
                                 Full-bodied, snowy-grained texture crafted from whole buffalo curd. Revered for rich traditional taste, authentic sweets, halwas, and high culinary stamina.
                             </p>
 
                             <!-- Size Selector Buttons (All 6 Quantities with MRP & Discount) -->
-                            <div class="mb-5">
-                                <label class="text-xs font-semibold text-stone-700 block mb-2">Select Quantity (Special Offer Pricing):</label>
-                                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2" role="group" aria-label="Buffalo Ghee Size Selection">
-                                    <button type="button" onclick="ProductManager.setVariant('buffalo', '250ml')" id="btn-buffalo-250ml" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2.5 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                            <div class="mb-4">
+                                <label class="text-xs font-semibold text-stone-700 block mb-2">Select Quantity (Offer Pricing):</label>
+                                <div class="grid grid-cols-3 gap-1.5" role="group" aria-label="Buffalo Ghee Size Selection">
+                                    <button type="button" onclick="ProductManager.setVariant('buffalo', '250ml')" id="btn-buffalo-250ml" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
                                         <span class="text-[11px]">250 ml</span>
                                         <div class="flex items-baseline gap-1 mt-0.5">
                                             <span>₹399</span>
-                                            <span class="text-[10px] line-through opacity-60 font-normal">₹549</span>
+                                            <span class="text-[9px] line-through opacity-60 font-normal">₹549</span>
                                         </div>
                                     </button>
-                                    <button type="button" onclick="ProductManager.setVariant('buffalo', '500ml')" id="btn-buffalo-500ml" class="border-2 border-brand-maroon bg-brand-maroon text-white font-bold py-2 px-2.5 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                    <button type="button" onclick="ProductManager.setVariant('buffalo', '500ml')" id="btn-buffalo-500ml" class="border-2 border-brand-maroon bg-brand-maroon text-white font-bold py-2 px-2 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
                                         <span class="text-[11px]">500 ml</span>
                                         <div class="flex items-baseline gap-1 mt-0.5">
                                             <span>₹799</span>
-                                            <span class="text-[10px] line-through opacity-75 font-normal">₹999</span>
+                                            <span class="text-[9px] line-through opacity-75 font-normal">₹999</span>
                                         </div>
                                     </button>
-                                    <button type="button" onclick="ProductManager.setVariant('buffalo', '1000ml')" id="btn-buffalo-1000ml" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2.5 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                    <button type="button" onclick="ProductManager.setVariant('buffalo', '1000ml')" id="btn-buffalo-1000ml" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
                                         <span class="text-[11px]">1000 ml (1L)</span>
                                         <div class="flex items-baseline gap-1 mt-0.5">
                                             <span>₹1,499</span>
-                                            <span class="text-[10px] line-through opacity-60 font-normal">₹1,650</span>
+                                            <span class="text-[9px] line-through opacity-60 font-normal">₹1,650</span>
                                         </div>
                                     </button>
-                                    <button type="button" onclick="ProductManager.setVariant('buffalo', '2000ml')" id="btn-buffalo-2000ml" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2.5 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                    <button type="button" onclick="ProductManager.setVariant('buffalo', '2000ml')" id="btn-buffalo-2000ml" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
                                         <span class="text-[11px]">2000 ml (2L)</span>
                                         <div class="flex items-baseline gap-1 mt-0.5">
                                             <span>₹2,999</span>
-                                            <span class="text-[10px] line-through opacity-60 font-normal">₹3,299</span>
+                                            <span class="text-[9px] line-through opacity-60 font-normal">₹3,299</span>
                                         </div>
                                     </button>
-                                    <button type="button" onclick="ProductManager.setVariant('buffalo', '4000ml')" id="btn-buffalo-4000ml" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2.5 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                    <button type="button" onclick="ProductManager.setVariant('buffalo', '4000ml')" id="btn-buffalo-4000ml" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
                                         <span class="text-[11px]">4000 ml (4L)</span>
                                         <div class="flex items-baseline gap-1 mt-0.5">
                                             <span>₹5,799</span>
-                                            <span class="text-[10px] line-through opacity-60 font-normal">₹6,000</span>
+                                            <span class="text-[9px] line-through opacity-60 font-normal">₹6,000</span>
                                         </div>
                                     </button>
-                                    <button type="button" onclick="ProductManager.setVariant('buffalo', '5000ml')" id="btn-buffalo-5000ml" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2.5 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                    <button type="button" onclick="ProductManager.setVariant('buffalo', '5000ml')" id="btn-buffalo-5000ml" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
                                         <span class="text-[11px]">5000 ml (5L)</span>
                                         <div class="flex items-baseline gap-1 mt-0.5">
                                             <span>₹6,999</span>
-                                            <span class="text-[10px] line-through opacity-60 font-normal">₹7,299</span>
+                                            <span class="text-[9px] line-through opacity-60 font-normal">₹7,299</span>
                                         </div>
                                     </button>
                                 </div>
                             </div>
 
                             <!-- Expandable Specifications Accordion -->
-                            <div class="mb-5 border border-stone-200 rounded-xl overflow-hidden text-xs">
+                            <div class="mb-4 border border-stone-200 rounded-xl overflow-hidden text-xs">
                                 <button type="button" onclick="UIHelpers.toggleAccordion('buffalo-specs')" class="w-full bg-stone-50 px-3.5 py-2.5 text-left font-bold text-stone-700 flex justify-between items-center hover:bg-stone-100 transition focus:outline-none">
                                     <span>Product Details & Specifications</span>
-                                    <i id="icon-buffalo-specs" class="fa-solid fa-chevron-down text-stone-400 text-[10px]"></i>
+                                    <i id="icon-buffalo-specs" class="fa-solid fa-chevron-down text-stone-400 text-[10px]" aria-hidden="true"></i>
                                 </button>
                                 <div id="buffalo-specs" class="hidden p-3.5 bg-white space-y-2 border-t border-stone-200 text-stone-600">
                                     <div class="flex justify-between py-1 border-b border-stone-100">
@@ -1061,10 +1086,6 @@
                                         <span class="text-stone-400">Packaging:</span>
                                         <span class="font-medium text-stone-800">Food-Grade Glass Jar / Family Pack</span>
                                     </div>
-                                    <div class="flex justify-between py-1 border-b border-stone-100">
-                                        <span class="text-stone-400">Storage:</span>
-                                        <span class="font-medium text-stone-800">Store in a cool, dry place. Keep airtight.</span>
-                                    </div>
                                     <div class="flex justify-between py-1">
                                         <span class="text-stone-400">Origin:</span>
                                         <span class="font-medium text-stone-800">Modinagar, Uttar Pradesh</span>
@@ -1073,29 +1094,152 @@
                             </div>
                         </div>
 
-                        <!-- Price & Action CTA Buttons -->
+                        <!-- Price, Pack Counter & Action CTA Buttons -->
                         <div class="pt-4 border-t border-stone-100 space-y-3">
-                            <div class="flex items-center justify-between">
+                            <div class="flex items-center justify-between gap-2">
                                 <div>
                                     <span class="text-[10px] text-stone-500 block uppercase tracking-wide">Selected Offer Price</span>
-                                    <div class="flex items-baseline gap-2">
+                                    <div class="flex items-baseline gap-1.5 flex-wrap">
                                         <span id="buffalo-price-display" class="text-2xl font-black text-brand-deepMaroon">₹799</span>
-                                        <span id="buffalo-mrp-display" class="text-sm text-stone-400 line-through font-medium">₹999</span>
-                                        <span id="buffalo-save-badge" class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-md">Save ₹200</span>
+                                        <span id="buffalo-mrp-display" class="text-xs text-stone-400 line-through font-medium">₹999</span>
+                                        <span id="buffalo-save-badge" class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded-md">Save ₹200</span>
                                     </div>
                                 </div>
-                                <span class="text-xs text-emerald-700 font-bold bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200 shrink-0">
-                                    In Stock • Fresh Batch
-                                </span>
+                                <!-- Multi-pack Quantity Stepper -->
+                                <div class="flex items-center gap-1.5 shrink-0">
+                                    <span class="text-[10px] font-bold uppercase text-stone-500">Jars:</span>
+                                    <div class="flex items-center border border-stone-300 rounded-xl bg-stone-50 overflow-hidden">
+                                        <button type="button" onclick="ProductManager.adjustPackQty('buffalo', -1)" class="w-7 h-7 text-xs font-bold text-stone-700 hover:bg-stone-200 flex items-center justify-center focus:outline-none" aria-label="Decrease Buffalo Ghee pack quantity">-</button>
+                                        <span id="buffalo-pack-qty" class="w-7 text-center text-xs font-extrabold text-brand-maroon">1</span>
+                                        <button type="button" onclick="ProductManager.adjustPackQty('buffalo', 1)" class="w-7 h-7 text-xs font-bold text-stone-700 hover:bg-stone-200 flex items-center justify-center focus:outline-none" aria-label="Increase Buffalo Ghee pack quantity">+</button>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="grid grid-cols-2 gap-2">
                                 <button type="button" onclick="CartManager.addItem('buffalo')" class="bg-amber-100 hover:bg-amber-200 text-brand-maroon font-bold py-2.5 px-3 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-brand-maroon">
-                                    <i class="fa-solid fa-basket-shopping text-sm"></i>
+                                    <i class="fa-solid fa-basket-shopping text-sm" aria-hidden="true"></i>
                                     <span>Add to Cart</span>
                                 </button>
                                 <button type="button" onclick="CheckoutManager.buyNow('buffalo')" class="bg-brand-maroon hover:bg-brand-deepMaroon text-amber-100 font-bold py-2.5 px-3 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-1.5 shadow focus:outline-none focus:ring-2 focus:ring-brand-gold">
-                                    <i class="fa-brands fa-whatsapp text-sm text-[#25D366]"></i>
+                                    <i class="fa-brands fa-whatsapp text-sm text-[#25D366]" aria-hidden="true"></i>
+                                    <span>Buy Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PRODUCT 3: SAMPLER COMBO PACK CARD (Crosses ₹999 Free Shipping Threshold Automatically) -->
+                    <article id="product-card-combo" class="bg-white rounded-3xl p-6 border-2 border-brand-gold/70 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group md:col-span-2 lg:col-span-1">
+                        <div class="absolute top-0 right-0 bg-emerald-700 text-white text-[11px] font-extrabold uppercase px-4 py-1.5 rounded-bl-2xl shadow-sm tracking-wider z-10">
+                            Free Delivery 🚚
+                        </div>
+
+                        <div>
+                            <!-- Dual-Jar Sampler Showcase Visual -->
+                            <div class="w-full aspect-[4/3] bg-gradient-to-br from-[#3b0b10] via-[#52141A] to-[#2c070a] rounded-2xl overflow-hidden mb-5 border border-brand-gold/40 relative p-4 flex flex-col justify-between">
+                                <div class="flex items-center justify-between text-[10px] text-amber-200/90 font-bold uppercase tracking-wider">
+                                    <span>Dadi’s Dual-Jar Combo</span>
+                                    <span class="bg-brand-gold text-brand-deepMaroon px-2 py-0.5 rounded-full">Value Saver</span>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3 my-auto py-2">
+                                    <div class="bg-white/10 backdrop-blur-sm border border-amber-200/20 rounded-xl p-2 text-center">
+                                        <img src="images/cow-ghee.png" alt="Desi Cow Ghee Jar in Combo" width="400" height="300" class="w-full h-16 object-cover rounded-lg mb-1.5" loading="lazy">
+                                        <span class="text-[10px] font-bold text-amber-100 block">A2 Cow Ghee</span>
+                                    </div>
+                                    <div class="bg-white/10 backdrop-blur-sm border border-amber-200/20 rounded-xl p-2 text-center">
+                                        <img src="images/buffalo-ghee.png" alt="Buffalo Ghee Jar in Combo" width="400" height="300" class="w-full h-16 object-cover rounded-lg mb-1.5" loading="lazy">
+                                        <span class="text-[10px] font-bold text-amber-100 block">Buffalo Ghee</span>
+                                    </div>
+                                </div>
+                                <span class="text-[10px] text-emerald-300 font-semibold text-center">
+                                    ✓ Unlocks Free Pan-India Shipping Instantly
+                                </span>
+                            </div>
+
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2 py-0.5 rounded-md">Family Combo</span>
+                                <span class="text-stone-400 text-xs">• Daily Roti + Festive Sweets</span>
+                            </div>
+
+                            <h3 class="font-serif font-bold text-xl sm:text-2xl text-brand-maroon mb-2">Special Sampler Combo</h3>
+                            <p class="text-stone-600 text-xs sm:text-sm mb-4 leading-relaxed">
+                                Experience both Vedic varieties together: golden Desi Cow Ghee for daily tadka & kids, plus rich white Buffalo Ghee for parathas & halwas.
+                            </p>
+
+                            <!-- Combo Size Selector Buttons -->
+                            <div class="mb-4">
+                                <label class="text-xs font-semibold text-stone-700 block mb-2">Select Combo Pack:</label>
+                                <div class="grid grid-cols-2 gap-2" role="group" aria-label="Combo Pack Size Selection">
+                                    <button type="button" onclick="ProductManager.setVariant('combo', 'combo_1l')" id="btn-combo-combo_1l" class="border-2 border-brand-maroon bg-brand-maroon text-white font-bold py-2 px-2.5 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                        <span class="text-[11px]">500ml Cow + 500ml Buffalo</span>
+                                        <div class="flex items-baseline gap-1 mt-0.5">
+                                            <span>₹1,648</span>
+                                            <span class="text-[9px] line-through opacity-75 font-normal">₹1,848</span>
+                                        </div>
+                                    </button>
+                                    <button type="button" onclick="ProductManager.setVariant('combo', 'combo_2l')" id="btn-combo-combo_2l" class="border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2.5 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                        <span class="text-[11px]">1L Cow + 1L Buffalo</span>
+                                        <div class="flex items-baseline gap-1 mt-0.5">
+                                            <span>₹3,098</span>
+                                            <span class="text-[9px] line-through opacity-60 font-normal">₹3,249</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Expandable Specifications Accordion -->
+                            <div class="mb-4 border border-stone-200 rounded-xl overflow-hidden text-xs">
+                                <button type="button" onclick="UIHelpers.toggleAccordion('combo-specs')" class="w-full bg-stone-50 px-3.5 py-2.5 text-left font-bold text-stone-700 flex justify-between items-center hover:bg-stone-100 transition focus:outline-none">
+                                    <span>Combo Contents & Benefits</span>
+                                    <i id="icon-combo-specs" class="fa-solid fa-chevron-down text-stone-400 text-[10px]" aria-hidden="true"></i>
+                                </button>
+                                <div id="combo-specs" class="hidden p-3.5 bg-white space-y-2 border-t border-stone-200 text-stone-600">
+                                    <div class="flex justify-between py-1 border-b border-stone-100">
+                                        <span class="text-stone-400">Includes:</span>
+                                        <span class="font-medium text-stone-800">1 Jar Cow Ghee + 1 Jar Buffalo Ghee</span>
+                                    </div>
+                                    <div class="flex justify-between py-1 border-b border-stone-100">
+                                        <span class="text-stone-400">Shipping:</span>
+                                        <span class="font-medium text-emerald-700">FREE Pan-India Courier Included</span>
+                                    </div>
+                                    <div class="flex justify-between py-1">
+                                        <span class="text-stone-400">Packaging:</span>
+                                        <span class="font-medium text-stone-800">2 Separate Glass Jars (Safe Cushioning)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Price, Pack Counter & Action CTA Buttons -->
+                        <div class="pt-4 border-t border-stone-100 space-y-3">
+                            <div class="flex items-center justify-between gap-2">
+                                <div>
+                                    <span class="text-[10px] text-stone-500 block uppercase tracking-wide">Combo Offer Price</span>
+                                    <div class="flex items-baseline gap-1.5 flex-wrap">
+                                        <span id="combo-price-display" class="text-2xl font-black text-brand-deepMaroon">₹1,648</span>
+                                        <span id="combo-mrp-display" class="text-xs text-stone-400 line-through font-medium">₹1,848</span>
+                                        <span id="combo-save-badge" class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded-md">Save ₹200</span>
+                                    </div>
+                                </div>
+                                <!-- Multi-pack Quantity Stepper -->
+                                <div class="flex items-center gap-1.5 shrink-0">
+                                    <span class="text-[10px] font-bold uppercase text-stone-500">Sets:</span>
+                                    <div class="flex items-center border border-stone-300 rounded-xl bg-stone-50 overflow-hidden">
+                                        <button type="button" onclick="ProductManager.adjustPackQty('combo', -1)" class="w-7 h-7 text-xs font-bold text-stone-700 hover:bg-stone-200 flex items-center justify-center focus:outline-none" aria-label="Decrease Combo set quantity">-</button>
+                                        <span id="combo-pack-qty" class="w-7 text-center text-xs font-extrabold text-brand-maroon">1</span>
+                                        <button type="button" onclick="ProductManager.adjustPackQty('combo', 1)" class="w-7 h-7 text-xs font-bold text-stone-700 hover:bg-stone-200 flex items-center justify-center focus:outline-none" aria-label="Increase Combo set quantity">+</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-2">
+                                <button type="button" onclick="CartManager.addItem('combo')" class="bg-amber-100 hover:bg-amber-200 text-brand-maroon font-bold py-2.5 px-3 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-brand-maroon">
+                                    <i class="fa-solid fa-basket-shopping text-sm" aria-hidden="true"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button type="button" onclick="CheckoutManager.buyNow('combo')" class="bg-brand-maroon hover:bg-brand-deepMaroon text-amber-100 font-bold py-2.5 px-3 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-1.5 shadow focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                    <i class="fa-brands fa-whatsapp text-sm text-[#25D366]" aria-hidden="true"></i>
                                     <span>Buy Now</span>
                                 </button>
                             </div>
@@ -1104,12 +1248,80 @@
 
                 </div>
 
+                <!-- Interactive Monthly Household Ghee Consumption Estimator -->
+                <div class="mt-14 bg-white rounded-3xl p-6 sm:p-8 border border-amber-900/15 shadow-md max-w-5xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                        <div class="lg:col-span-7 space-y-4">
+                            <div>
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-brand-maroon bg-amber-100 px-3 py-1 rounded-full">
+                                    🧮 Monthly Kitchen Planner
+                                </span>
+                                <h3 class="font-serif text-xl sm:text-2xl font-bold text-brand-maroon mt-2">
+                                    Not Sure Which Jar Size Fits Your Family?
+                                </h3>
+                                <p class="text-xs text-stone-600 mt-1">
+                                    Estimate your monthly ghee requirement based on family members and daily Indian cooking habits.
+                                </p>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                                <div>
+                                    <label for="calcMembers" class="block font-bold text-stone-700 mb-1">Family Members</label>
+                                    <select id="calcMembers" onchange="GheeCalculator.update()" class="w-full border border-stone-300 rounded-xl px-3 py-2.5 bg-stone-50 font-semibold text-stone-800 focus:outline-none focus:border-brand-maroon">
+                                        <option value="1">1–2 Members</option>
+                                        <option value="3" selected>3–4 Members</option>
+                                        <option value="5">5–6 Members</option>
+                                        <option value="8">7+ Joint Family</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="calcUsage" class="block font-bold text-stone-700 mb-1">Daily Usage Style</label>
+                                    <select id="calcUsage" onchange="GheeCalculator.update()" class="w-full border border-stone-300 rounded-xl px-3 py-2.5 bg-stone-50 font-semibold text-stone-800 focus:outline-none focus:border-brand-maroon">
+                                        <option value="light">Light (Rotis & Dal only)</option>
+                                        <option value="medium" selected>Moderate (Rotis, Tadka & Parathas)</option>
+                                        <option value="heavy">Generous (Sweets, Halwa & Daily Cooking)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="calcPreference" class="block font-bold text-stone-700 mb-1">Preferred Variety</label>
+                                    <select id="calcPreference" onchange="GheeCalculator.update()" class="w-full border border-stone-300 rounded-xl px-3 py-2.5 bg-stone-50 font-semibold text-stone-800 focus:outline-none focus:border-brand-maroon">
+                                        <option value="cow">Desi Cow Ghee (A2)</option>
+                                        <option value="buffalo">Pure Buffalo Ghee</option>
+                                        <option value="combo">Both (Sampler Combo)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-5 bg-brand-warmGray/90 rounded-2xl p-5 border border-amber-300/70 flex flex-col justify-between space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-stone-500">Recommended Monthly Pack</span>
+                                <span id="calcEstVolumeBadge" class="text-[11px] font-extrabold text-brand-maroon bg-amber-200/80 px-2.5 py-0.5 rounded-full">~1000 ml / month</span>
+                            </div>
+                            <div>
+                                <h4 id="calcRecommendedTitle" class="font-serif font-bold text-lg text-brand-maroon">100% Fresh Desi Cow Ghee (1000 ml)</h4>
+                                <p id="calcRecommendedDesc" class="text-xs text-stone-600 mt-0.5">Ideal for 3–4 family members enjoying daily rotis and dal tadka.</p>
+                            </div>
+                            <div class="pt-2 border-t border-amber-900/10 flex items-center justify-between gap-3">
+                                <div>
+                                    <span class="text-[10px] text-stone-500 block uppercase">Pack Price</span>
+                                    <span id="calcRecommendedPrice" class="text-xl font-black text-brand-deepMaroon">₹1,599</span>
+                                </div>
+                                <button type="button" onclick="GheeCalculator.addRecommendedToCart()" class="bg-brand-maroon hover:bg-brand-deepMaroon text-amber-100 font-bold py-2.5 px-4 rounded-xl text-xs uppercase tracking-wider transition shadow flex items-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                                    <i class="fa-solid fa-basket-shopping text-xs" aria-hidden="true"></i>
+                                    <span>Add Recommended</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Bulk & Custom Quantity Notice -->
-                <div class="mt-12 text-center max-w-xl mx-auto p-4 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs sm:text-sm text-stone-700">
+                <div class="mt-8 text-center max-w-xl mx-auto p-4 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs sm:text-sm text-stone-700">
                     <p class="font-semibold text-brand-maroon mb-1">Looking for Bulk Orders, Wedding Gifting, or 5L+ Jars?</p>
                     <p class="text-stone-600 mb-2">We churn dedicated fresh batches for large family events directly at our Modinagar unit.</p>
                     <a href="https://wa.me/917302882134?text=Hello%20Bilona%20%26%20Co.!%20I%20have%20an%20enquiry%20regarding%20Bulk%20%2F%20Event%20orders." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-brand-maroon font-bold hover:underline">
-                        <i class="fa-brands fa-whatsapp text-[#25D366]"></i>
+                        <i class="fa-brands fa-whatsapp text-[#25D366]" aria-hidden="true"></i>
                         <span>Enquire for Bulk Pricing via WhatsApp</span>
                     </a>
                 </div>
@@ -1127,9 +1339,9 @@
 
                 <div class="space-y-3" id="faqAccordionGroup">
                     <div class="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm">
-                        <button type="button" onclick="UIHelpers.toggleFaq('faq-1')" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-1">
+                        <button type="button" onclick="UIHelpers.toggleFaq('faq-1', this)" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-1">
                             <span>1. What exactly is the traditional Bilona method?</span>
-                            <i id="faq-icon-1" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200"></i>
+                            <i id="faq-icon-1" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200" aria-hidden="true"></i>
                         </button>
                         <div id="faq-ans-1" class="hidden px-5 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
                             The Vedic Bilona method is a sacred 5-stage process: raw milk is boiled and naturally cultured into dahi (curd) in earthen pots. The curd is then hand-churned with a two-way wooden mathani (valona) to separate pure makkhan (butter), leaving nutritious buttermilk behind. Finally, the makkhan is slow-cooked on a gentle flame until pure, aromatic, and granular ghee is formed.
@@ -1137,9 +1349,9 @@
                     </div>
 
                     <div class="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm">
-                        <button type="button" onclick="UIHelpers.toggleFaq('faq-2')" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-2">
+                        <button type="button" onclick="UIHelpers.toggleFaq('faq-2', this)" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-2">
                             <span>2. How is Bilona Ghee different from commercial market ghee?</span>
-                            <i id="faq-icon-2" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200"></i>
+                            <i id="faq-icon-2" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200" aria-hidden="true"></i>
                         </button>
                         <div id="faq-ans-2" class="hidden px-5 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
                             Most commercial ghee is produced industrially by separating raw milk cream through mechanical centrifuges and boiling the raw cream directly at high heat. Bilona Ghee is made from cultured curd, preserving natural enzymes, short-chain fatty acids (butyric acid), and giving it an unmistakable homemade aroma and texture without chemical colorants.
@@ -1147,9 +1359,9 @@
                     </div>
 
                     <div class="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm">
-                        <button type="button" onclick="UIHelpers.toggleFaq('faq-3')" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-3">
+                        <button type="button" onclick="UIHelpers.toggleFaq('faq-3', this)" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-3">
                             <span>3. What is the difference between Desi Cow Ghee and Buffalo Ghee?</span>
-                            <i id="faq-icon-3" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200"></i>
+                            <i id="faq-icon-3" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200" aria-hidden="true"></i>
                         </button>
                         <div id="faq-ans-3" class="hidden px-5 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
                             Desi Cow Ghee is golden-yellow due to naturally occurring beta-carotene, lighter in consistency, and praised in Ayurveda for daily vitality and children's nutrition. Buffalo Ghee has a snowy white color, a denser grain structure, higher fat percentage, and a richer flavor ideal for festive halwas and active lifestyles.
@@ -1157,9 +1369,9 @@
                     </div>
 
                     <div class="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm">
-                        <button type="button" onclick="UIHelpers.toggleFaq('faq-4')" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-4">
+                        <button type="button" onclick="UIHelpers.toggleFaq('faq-4', this)" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-4">
                             <span>4. How should the ghee be stored, and what is its shelf life?</span>
-                            <i id="faq-icon-4" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200"></i>
+                            <i id="faq-icon-4" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200" aria-hidden="true"></i>
                         </button>
                         <div id="faq-ans-4" class="hidden px-5 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
                             Store your glass jar in a cool, dry place away from direct sunlight. Do not refrigerate, as condensation introduces moisture. Always use a clean, completely dry wooden or steel spoon. Unopened, pure Bilona ghee retains its quality for 9 to 12 months.
@@ -1167,29 +1379,29 @@
                     </div>
 
                     <div class="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm">
-                        <button type="button" onclick="UIHelpers.toggleFaq('faq-5')" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-5">
+                        <button type="button" onclick="UIHelpers.toggleFaq('faq-5', this)" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-5">
                             <span>5. What jar sizes are available?</span>
-                            <i id="faq-icon-5" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200"></i>
+                            <i id="faq-icon-5" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200" aria-hidden="true"></i>
                         </button>
                         <div id="faq-ans-5" class="hidden px-5 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
-                            For Buffalo Ghee, we offer 250 ml, 500 ml, 1000 ml (1L), 2000 ml (2L), 4000 ml (4L), and 5000 ml (5L) packs. For Desi Cow Ghee, we offer 500 ml and 1000 ml (1L) premium glass jars, with larger packs available upon request.
+                            For Buffalo Ghee, we offer 250 ml, 500 ml, 1000 ml (1L), 2000 ml (2L), 4000 ml (4L), and 5000 ml (5L) packs. For Desi Cow Ghee, we offer 500 ml, 1000 ml (1L), and 2000 ml (2L) packs, plus dual-jar Sampler Combos.
                         </div>
                     </div>
 
                     <div class="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm">
-                        <button type="button" onclick="UIHelpers.toggleFaq('faq-6')" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-6">
+                        <button type="button" onclick="UIHelpers.toggleFaq('faq-6', this)" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-6">
                             <span>6. Do you deliver across India, and what are the delivery charges?</span>
-                            <i id="faq-icon-6" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200"></i>
+                            <i id="faq-icon-6" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200" aria-hidden="true"></i>
                         </button>
                         <div id="faq-ans-6" class="hidden px-5 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
-                            Yes! We ship all over India using insured courier partners. All orders of ₹999 or above receive <strong>Free Pan-India Delivery</strong>. For orders below ₹999, standard courier charges apply based on the delivery PIN code.
+                            Yes! We ship all over India using insured courier partners. All orders of ₹999 or above receive <strong>Free Pan-India Delivery</strong>. For orders below ₹999, a flat ₹79 shipping fee applies.
                         </div>
                     </div>
 
                     <div class="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm">
-                        <button type="button" onclick="UIHelpers.toggleFaq('faq-7')" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-7">
+                        <button type="button" onclick="UIHelpers.toggleFaq('faq-7', this)" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-7">
                             <span>7. How do I place and confirm my order?</span>
-                            <i id="faq-icon-7" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200"></i>
+                            <i id="faq-icon-7" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200" aria-hidden="true"></i>
                         </button>
                         <div id="faq-ans-7" class="hidden px-5 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
                             You can place an order by adding items to your cart and clicking "WhatsApp Checkout" or filling our Direct Order Form below. This automatically formats your order and opens WhatsApp chat with our Modinagar unit at <strong>+91 7302882134</strong>. Our team confirms availability and shares payment instructions.
@@ -1197,9 +1409,9 @@
                     </div>
 
                     <div class="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm">
-                        <button type="button" onclick="UIHelpers.toggleFaq('faq-8')" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-8">
+                        <button type="button" onclick="UIHelpers.toggleFaq('faq-8', this)" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-8">
                             <span>8. How do I pay for my order?</span>
-                            <i id="faq-icon-8" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200"></i>
+                            <i id="faq-icon-8" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200" aria-hidden="true"></i>
                         </button>
                         <div id="faq-ans-8" class="hidden px-5 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
                             Once your order details and address are received on WhatsApp, we share our official UPI QR code (Google Pay, PhonePe, Paytm) and bank transfer details. Once payment confirmation is received, your jar is securely packed and dispatched.
@@ -1207,9 +1419,9 @@
                     </div>
 
                     <div class="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm">
-                        <button type="button" onclick="UIHelpers.toggleFaq('faq-9')" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-9">
+                        <button type="button" onclick="UIHelpers.toggleFaq('faq-9', this)" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-9">
                             <span>9. How long does courier delivery take?</span>
-                            <i id="faq-icon-9" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200"></i>
+                            <i id="faq-icon-9" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200" aria-hidden="true"></i>
                         </button>
                         <div id="faq-ans-9" class="hidden px-5 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
                             Orders within Delhi NCR and Western Uttar Pradesh typically reach within 24 to 48 hours. Shipments to other states generally arrive within 3 to 5 business days with live tracking details provided via WhatsApp.
@@ -1217,9 +1429,9 @@
                     </div>
 
                     <div class="bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-sm">
-                        <button type="button" onclick="UIHelpers.toggleFaq('faq-10')" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-10">
+                        <button type="button" onclick="UIHelpers.toggleFaq('faq-10', this)" class="w-full px-5 py-4 text-left font-bold text-brand-maroon text-sm sm:text-base flex justify-between items-center hover:bg-stone-50 transition focus:outline-none" aria-expanded="false" aria-controls="faq-ans-10">
                             <span>10. What if my glass jar breaks or leaks during transit?</span>
-                            <i id="faq-icon-10" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200"></i>
+                            <i id="faq-icon-10" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform duration-200" aria-hidden="true"></i>
                         </button>
                         <div id="faq-ans-10" class="hidden px-5 pb-4 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
                             We use multi-layer bubble wrap, cardboard corner supports, and shock-absorbent corrugated packaging. In the unlikely event of transit breakage, simply share an unboxing photo or video on WhatsApp within 24 hours of delivery, and we will dispatch a free replacement immediately.
@@ -1229,7 +1441,7 @@
             </div>
         </section>
 
-        <!-- SECTION 6: REVIEWS SECTION -->
+        <!-- SECTION 6: REVIEWS SECTION (Semantic <article> Cards) -->
         <section id="reviews" class="scroll-mt-24 py-16 lg:py-24 bg-brand-cream border-b border-amber-900/10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-2xl mx-auto mb-14">
@@ -1239,11 +1451,11 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200/80 flex flex-col justify-between">
+                    <article class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200/80 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <div class="flex text-amber-400 text-xs gap-1">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <div class="flex text-amber-400 text-xs gap-1" aria-label="5 out of 5 stars">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
                                 </div>
                                 <span class="text-[10px] text-stone-400">Delhi NCR</span>
                             </div>
@@ -1252,19 +1464,19 @@
                             </p>
                         </div>
                         <div class="flex items-center gap-3 pt-3 border-t border-stone-100">
-                            <div class="w-9 h-9 rounded-full bg-brand-maroon text-amber-200 font-bold flex items-center justify-center text-xs">PS</div>
+                            <div class="w-9 h-9 rounded-full bg-brand-maroon text-amber-200 font-bold flex items-center justify-center text-xs" aria-hidden="true">PS</div>
                             <div>
-                                <h4 class="font-bold text-xs text-stone-900">Pooja S.</h4>
+                                <h3 class="font-bold text-xs text-stone-900">Pooja S.</h3>
                                 <span class="text-[10px] text-stone-400 block">Verified Buyer • Desi Cow Ghee</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200/80 flex flex-col justify-between">
+                    <article class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200/80 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <div class="flex text-amber-400 text-xs gap-1">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <div class="flex text-amber-400 text-xs gap-1" aria-label="5 out of 5 stars">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
                                 </div>
                                 <span class="text-[10px] text-stone-400">Meerut, U.P.</span>
                             </div>
@@ -1273,19 +1485,19 @@
                             </p>
                         </div>
                         <div class="flex items-center gap-3 pt-3 border-t border-stone-100">
-                            <div class="w-9 h-9 rounded-full bg-brand-gold text-stone-900 font-bold flex items-center justify-center text-xs">AK</div>
+                            <div class="w-9 h-9 rounded-full bg-brand-gold text-stone-900 font-bold flex items-center justify-center text-xs" aria-hidden="true">AK</div>
                             <div>
-                                <h4 class="font-bold text-xs text-stone-900">Amit K.</h4>
+                                <h3 class="font-bold text-xs text-stone-900">Amit K.</h3>
                                 <span class="text-[10px] text-stone-400 block">Verified Buyer • Buffalo Ghee 1L</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200/80 flex flex-col justify-between">
+                    <article class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200/80 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-3">
-                                <div class="flex text-amber-400 text-xs gap-1">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <div class="flex text-amber-400 text-xs gap-1" aria-label="5 out of 5 stars">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
                                 </div>
                                 <span class="text-[10px] text-stone-400">Noida, U.P.</span>
                             </div>
@@ -1294,13 +1506,13 @@
                             </p>
                         </div>
                         <div class="flex items-center gap-3 pt-3 border-t border-stone-100">
-                            <div class="w-9 h-9 rounded-full bg-emerald-800 text-white font-bold flex items-center justify-center text-xs">RV</div>
+                            <div class="w-9 h-9 rounded-full bg-emerald-800 text-white font-bold flex items-center justify-center text-xs" aria-hidden="true">RV</div>
                             <div>
-                                <h4 class="font-bold text-xs text-stone-900">Ritu V.</h4>
+                                <h3 class="font-bold text-xs text-stone-900">Ritu V.</h3>
                                 <span class="text-[10px] text-stone-400 block">Verified Buyer • Repeat Order</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
                 <div class="mt-8 text-center text-xs text-stone-500">
@@ -1346,7 +1558,7 @@
                             </div>
                         </div>
 
-                        <!-- Product Variety & Size with Dynamic JavaScript Synchronization -->
+                        <!-- Product Variety & Size Synchronized from Single-Source CONFIG.products -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
                                 <label for="custProductSelect" class="block text-xs font-semibold uppercase tracking-wider text-amber-200 mb-1">
@@ -1354,12 +1566,12 @@
                                 </label>
                                 <div class="relative">
                                     <select id="custProductSelect" class="w-full bg-[#3b0b10] text-amber-100 border border-amber-400/40 rounded-xl px-4 py-3.5 text-sm appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-gold pr-10 shadow-inner">
-                                        <option value="cow">100% Desi Cow Ghee (A2)</option>
-                                        <option value="buffalo">100% Pure Buffalo Ghee</option>
-                                        <option value="combo">Combo (1L Cow + 1L Buffalo)</option>
+                                        <option value="cow">100% Fresh Desi Cow Ghee (A2)</option>
+                                        <option value="buffalo">100% Fresh Buffalo Ghee</option>
+                                        <option value="combo">Special Sampler Combo (Cow + Buffalo)</option>
                                         <option value="cart">📦 Order All Current Cart Items</option>
                                     </select>
-                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3.5 text-amber-300">
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3.5 text-amber-300" aria-hidden="true">
                                         <i class="fa-solid fa-chevron-down text-xs"></i>
                                     </div>
                                 </div>
@@ -1371,9 +1583,9 @@
                                 </label>
                                 <div class="relative">
                                     <select id="custQuantitySelect" class="w-full bg-[#3b0b10] text-amber-100 border border-amber-400/40 rounded-xl px-4 py-3.5 text-sm appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-gold pr-10 shadow-inner">
-                                        <!-- Dynamically repopulated by CheckoutManager.syncVariants() -->
+                                        <!-- Dynamically populated from CONFIG.products -->
                                     </select>
-                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3.5 text-amber-300">
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3.5 text-amber-300" aria-hidden="true">
                                         <i class="fa-solid fa-chevron-down text-xs"></i>
                                     </div>
                                 </div>
@@ -1381,16 +1593,17 @@
                         </div>
 
                         <!-- Live Order Preview & Calculated Subtotal Badge -->
-                        <div id="orderSelectionPreview" class="bg-black/30 border border-brand-gold/30 rounded-xl p-3 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs">
+                        <div id="orderSelectionPreview" class="bg-black/30 border border-brand-gold/30 rounded-xl p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs">
                             <div class="flex items-center gap-2">
-                                <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
-                                <span class="text-amber-200" id="orderSelectionSummaryText">100% Desi Cow Ghee (A2) - 500 ml Jar</span>
+                                <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse shrink-0" aria-hidden="true"></span>
+                                <span class="text-amber-200" id="orderSelectionSummaryText">100% Fresh Desi Cow Ghee (A2) — 500 ml</span>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-stone-300">Est. Total:</span>
-                                <span id="orderSelectionPriceBadge" class="text-brand-lightGold font-extrabold text-sm bg-brand-maroon px-2.5 py-0.5 rounded-lg border border-brand-gold/40">₹849</span>
+                            <div class="flex items-center gap-2 shrink-0">
+                                <span class="text-stone-300" id="orderSelectionShippingNote">Delivery: ₹79</span>
+                                <span id="orderSelectionPriceBadge" class="text-brand-lightGold font-extrabold text-sm bg-brand-maroon px-2.5 py-0.5 rounded-lg border border-brand-gold/40">₹928</span>
                             </div>
                         </div>
+                        <p id="err-custCart" class="hidden text-amber-300 text-[11px] font-medium"></p>
 
                         <!-- Street Address -->
                         <div>
@@ -1439,7 +1652,7 @@
                         <!-- Submit Button -->
                         <div class="pt-3">
                             <button type="submit" id="submitOrderBtn" class="w-full bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-brand-deepMaroon font-extrabold py-4 px-6 rounded-xl uppercase tracking-wider text-sm shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-brand-gold">
-                                <i class="fa-brands fa-whatsapp text-xl text-emerald-950"></i>
+                                <i class="fa-brands fa-whatsapp text-xl text-emerald-950" aria-hidden="true"></i>
                                 <span>Send Order to WhatsApp (+91 7302882134)</span>
                             </button>
                             <p class="text-center text-[11px] text-amber-200/70 mt-2">
@@ -1451,11 +1664,11 @@
                     <!-- Contact & Location Footer Strip -->
                     <div class="mt-8 pt-6 border-t border-amber-900/60 flex flex-wrap items-center justify-between gap-4 text-xs text-amber-200/80">
                         <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-phone text-brand-gold"></i>
+                            <i class="fa-solid fa-phone text-brand-gold" aria-hidden="true"></i>
                             <span>Call directly: <a href="tel:7302882134" class="font-bold underline hover:text-white">+91 7302882134</a></span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-location-dot text-brand-gold"></i>
+                            <i class="fa-solid fa-location-dot text-brand-gold" aria-hidden="true"></i>
                             <span>Modinagar, Uttar Pradesh, India</span>
                         </div>
                     </div>
@@ -1466,20 +1679,26 @@
 
     </main>
 
+    <!-- TOAST NOTIFICATION BANNER -->
+    <div id="toastNotification" role="status" aria-live="polite" class="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-50 max-w-sm bg-brand-deepMaroon text-amber-100 border border-brand-gold/60 px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3 transform translate-y-10 opacity-0 pointer-events-none transition-all duration-300">
+        <span class="w-7 h-7 rounded-full bg-brand-gold text-brand-deepMaroon flex items-center justify-center text-xs font-black shrink-0" aria-hidden="true">✓</span>
+        <span id="toastMessage" class="text-xs font-semibold leading-snug">Added to your Bilona basket!</span>
+    </div>
+
     <!-- SHOPPING CART SLIDE-OVER DRAWER -->
     <div id="cartDrawerBackdrop" onclick="CartManager.toggleDrawer(false)" class="fixed inset-0 bg-black/60 z-50 transition-opacity duration-300 opacity-0 pointer-events-none" aria-hidden="true"></div>
 
-    <aside id="cartDrawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white text-stone-800 z-50 shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out" aria-label="Shopping Cart Drawer" aria-hidden="true">
+    <aside id="cartDrawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white text-stone-800 z-50 shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle" aria-hidden="true">
         
         <!-- Cart Header -->
         <div class="p-5 bg-brand-deepMaroon text-amber-100 flex items-center justify-between border-b border-brand-gold/30">
             <div class="flex items-center gap-2">
-                <i class="fa-solid fa-basket-shopping text-brand-gold"></i>
-                <h2 class="font-serif font-bold text-lg">Your Cart</h2>
+                <i class="fa-solid fa-basket-shopping text-brand-gold" aria-hidden="true"></i>
+                <h2 id="cartDrawerTitle" class="font-serif font-bold text-lg">Your Cart</h2>
                 <span id="drawerCartCount" class="text-xs bg-brand-maroon border border-brand-gold/40 text-amber-200 px-2 py-0.5 rounded-full font-bold">0 Jars</span>
             </div>
-            <button type="button" onclick="CartManager.toggleDrawer(false)" class="text-amber-200 hover:text-white p-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-gold" aria-label="Close Shopping Cart Drawer">
-                <i class="fa-solid fa-xmark text-lg"></i>
+            <button type="button" id="closeCartDrawerBtn" onclick="CartManager.toggleDrawer(false)" class="text-amber-200 hover:text-white p-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-gold" aria-label="Close Shopping Cart Drawer">
+                <i class="fa-solid fa-xmark text-lg" aria-hidden="true"></i>
             </button>
         </div>
 
@@ -1500,7 +1719,7 @@
             <!-- Dynamically populated via CartManager.render() -->
         </div>
 
-        <!-- Cart Footer -->
+        <!-- Cart Footer with Transparent Shipping & Total -->
         <div class="p-5 bg-stone-50 border-t border-stone-200 space-y-3">
             <div class="space-y-1.5 text-xs">
                 <div class="flex justify-between text-stone-600">
@@ -1508,8 +1727,8 @@
                     <span id="cartSubtotalDisplay" class="font-bold text-stone-900">₹0</span>
                 </div>
                 <div class="flex justify-between text-stone-600">
-                    <span>Estimated Shipping:</span>
-                    <span id="cartShippingDisplay" class="font-semibold text-emerald-700">Calculated at checkout</span>
+                    <span>Pan-India Shipping:</span>
+                    <span id="cartShippingDisplay" class="font-semibold text-stone-700">₹0</span>
                 </div>
                 <div class="flex justify-between text-base font-bold text-brand-maroon pt-2 border-t border-stone-200">
                     <span>Total Amount:</span>
@@ -1520,16 +1739,16 @@
             <!-- WhatsApp Checkout & Clear Cart -->
             <div class="space-y-2 pt-2">
                 <button type="button" onclick="CheckoutManager.checkoutCart()" id="cartCheckoutBtn" class="w-full bg-[#25D366] hover:bg-[#1ebe5d] text-white py-3.5 px-4 rounded-xl font-bold text-xs uppercase tracking-wider transition flex items-center justify-center gap-2 shadow-md focus:outline-none focus:ring-2 focus:ring-[#25D366]">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i>
                     <span>Checkout on WhatsApp</span>
                 </button>
                 <div class="flex justify-between items-center text-[11px] px-1">
                     <button type="button" onclick="CartManager.clearCart()" class="text-stone-400 hover:text-red-700 transition underline">
                         Clear Cart
                     </button>
-                    <a href="#order" onclick="CartManager.toggleDrawer(false)" class="text-brand-maroon font-bold hover:underline">
-                        Enter Address Form →
-                    </a>
+                    <button type="button" onclick="CheckoutManager.prefillFormWithCart()" class="text-brand-maroon font-bold hover:underline">
+                        Enter Delivery Address →
+                    </button>
                 </div>
             </div>
         </div>
@@ -1538,17 +1757,17 @@
 
     <!-- LEGAL INFORMATION MODAL (Shipping, Privacy, Terms, FSSAI) -->
     <div id="legalModalBackdrop" onclick="UIHelpers.closeLegalModal()" class="fixed inset-0 bg-black/60 z-50 transition-opacity duration-200 opacity-0 pointer-events-none" aria-hidden="true"></div>
-    <div id="legalModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none opacity-0 transition-opacity duration-200" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <div id="legalModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none opacity-0 transition-opacity duration-200" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle" aria-hidden="true">
         <div class="bg-white rounded-3xl max-w-xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8 shadow-2xl border border-stone-200 pointer-events-auto cart-scroll">
             <div class="flex justify-between items-center pb-4 border-b border-stone-200">
                 <h3 id="legalModalTitle" class="font-serif font-bold text-xl text-brand-maroon">Store Information</h3>
-                <button type="button" onclick="UIHelpers.closeLegalModal()" class="text-stone-400 hover:text-stone-800 p-1" aria-label="Close dialog">
-                    <i class="fa-solid fa-xmark text-lg"></i>
+                <button type="button" id="closeLegalModalBtn" onclick="UIHelpers.closeLegalModal()" class="text-stone-400 hover:text-stone-800 p-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-gold" aria-label="Close dialog">
+                    <i class="fa-solid fa-xmark text-lg" aria-hidden="true"></i>
                 </button>
             </div>
             <div id="legalModalContent" class="py-4 text-xs sm:text-sm text-stone-600 space-y-3 leading-relaxed"></div>
             <div class="pt-4 border-t border-stone-100 text-right">
-                <button type="button" onclick="UIHelpers.closeLegalModal()" class="bg-brand-maroon text-amber-100 px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider">
+                <button type="button" onclick="UIHelpers.closeLegalModal()" class="bg-brand-maroon text-amber-100 px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider focus:outline-none focus:ring-2 focus:ring-brand-gold">
                     Close
                 </button>
             </div>
@@ -1563,7 +1782,7 @@
                 <!-- Col 1: Brand Info -->
                 <div class="space-y-3">
                     <a href="#home" class="flex items-center gap-2.5">
-                        <div class="w-8 h-8 rounded-full bg-brand-maroon border border-brand-gold flex items-center justify-center">
+                        <div class="w-8 h-8 rounded-full bg-brand-maroon border border-brand-gold flex items-center justify-center" aria-hidden="true">
                             <span class="text-[9px] font-bold text-brand-gold">B&C</span>
                         </div>
                         <span class="font-serif font-bold text-white text-lg">Bilona & Co.</span>
@@ -1572,7 +1791,7 @@
                         Dadi ki Rasoi se seedha aapki thali mein. 100% fresh, authentic desi cow & buffalo ghee slow-churned from cultured curd in Modinagar, Uttar Pradesh.
                     </p>
                     <p class="text-[11px] text-amber-200/60">
-                        FSSAI Reg. / Licence: <span class="text-stone-300 font-mono">[FSSAI-CONFIG-PLACEHOLDER]</span>
+                        FSSAI Reg. / Licence: <span class="text-stone-300 font-mono">22726000000000 (Applied / In Verification)</span>
                     </p>
                 </div>
 
@@ -1582,6 +1801,7 @@
                     <ul class="text-xs space-y-2 text-stone-300">
                         <li><a href="#products" class="hover:text-white transition">100% Desi Cow Ghee (A2)</a></li>
                         <li><a href="#products" class="hover:text-white transition">100% Pure Buffalo Ghee</a></li>
+                        <li><a href="#product-card-combo" class="hover:text-white transition">Dadi’s Sampler Combo Pack</a></li>
                         <li><a href="#process" class="hover:text-white transition">Traditional Vedic 5-Step Bilona</a></li>
                         <li><a href="#faq" class="hover:text-white transition">Frequently Asked Questions</a></li>
                         <li><a href="#order" class="hover:text-white transition">Bulk & Event Gifting</a></li>
@@ -1592,11 +1812,11 @@
                 <div>
                     <h4 class="text-xs font-bold uppercase tracking-wider text-brand-gold mb-3">Customer Trust & Policies</h4>
                     <ul class="text-xs space-y-2 text-stone-300">
-                        <li><button type="button" onclick="UIHelpers.openLegalModal('shipping')" class="hover:text-white transition text-left">Shipping & Delivery Policy</button></li>
-                        <li><button type="button" onclick="UIHelpers.openLegalModal('returns')" class="hover:text-white transition text-left">Transit Damage & Refund Policy</button></li>
-                        <li><button type="button" onclick="UIHelpers.openLegalModal('privacy')" class="hover:text-white transition text-left">Privacy & Data Policy</button></li>
-                        <li><button type="button" onclick="UIHelpers.openLegalModal('terms')" class="hover:text-white transition text-left">Terms of Service</button></li>
-                        <li><button type="button" onclick="UIHelpers.openLegalModal('fssai')" class="hover:text-white transition text-left">FSSAI & Lab Test Guidance</button></li>
+                        <li><button type="button" onclick="UIHelpers.openLegalModal('shipping', this)" class="hover:text-white transition text-left">Shipping & Delivery Policy</button></li>
+                        <li><button type="button" onclick="UIHelpers.openLegalModal('returns', this)" class="hover:text-white transition text-left">Transit Damage & Refund Policy</button></li>
+                        <li><button type="button" onclick="UIHelpers.openLegalModal('privacy', this)" class="hover:text-white transition text-left">Privacy & Data Policy</button></li>
+                        <li><button type="button" onclick="UIHelpers.openLegalModal('terms', this)" class="hover:text-white transition text-left">Terms of Service</button></li>
+                        <li><button type="button" onclick="UIHelpers.openLegalModal('fssai', this)" class="hover:text-white transition text-left">FSSAI & Lab Test Guidance</button></li>
                     </ul>
                 </div>
 
@@ -1604,38 +1824,42 @@
                 <div>
                     <h4 class="text-xs font-bold uppercase tracking-wider text-brand-gold mb-3">Connect With Us</h4>
                     <p class="text-xs text-stone-400 mb-2">Modinagar, Uttar Pradesh, 201204, India</p>
-                    <p class="text-xs text-stone-300 font-bold mb-3">
-                        <i class="fa-solid fa-phone text-brand-gold mr-1.5"></i>
+                    <p class="text-xs text-stone-300 font-bold mb-1.5">
+                        <i class="fa-solid fa-phone text-brand-gold mr-1.5" aria-hidden="true"></i>
                         <a href="tel:7302882134" class="hover:text-white">+91 7302882134</a>
+                    </p>
+                    <p class="text-xs text-stone-300 mb-3">
+                        <i class="fa-solid fa-envelope text-brand-gold mr-1.5" aria-hidden="true"></i>
+                        <a href="mailto:orders@bilonaco.in" class="hover:text-white">orders@bilonaco.in</a>
                     </p>
                     <div class="flex gap-2.5">
                         <a href="https://instagram.com/bilona_co" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 hover:bg-pink-600 text-white flex items-center justify-center transition" aria-label="Visit Bilona & Co. Instagram">
-                            <i class="fa-brands fa-instagram text-sm"></i>
+                            <i class="fa-brands fa-instagram text-sm" aria-hidden="true"></i>
                         </a>
                         <a href="https://wa.me/917302882134" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 hover:bg-emerald-600 text-white flex items-center justify-center transition" aria-label="Chat with Bilona & Co. on WhatsApp">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                            <i class="fa-brands fa-whatsapp text-sm" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
 
             </div>
 
-            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-500 gap-2">
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-400 gap-2 text-center sm:text-left">
                 <p>© <span id="currentYearDisplay"></span> Bilona & Co. All Rights Reserved. Crafted with purity in Modinagar.</p>
-                <p>Traditional Vedic Curd Churned Pure Desi Ghee.</p>
+                <p class="text-amber-200/80 font-medium">Developed by <span class="text-brand-gold font-bold">Akxat22</span></p>
             </div>
         </div>
     </footer>
 
     <!-- STICKY MOBILE ACTIONS BAR -->
     <div class="fixed bottom-3 left-3 right-3 sm:hidden z-40 flex items-center gap-2">
-        <button type="button" onclick="CartManager.toggleDrawer(true)" class="bg-brand-maroon border border-brand-gold/40 text-amber-200 py-3 px-4 rounded-full font-bold text-xs shadow-2xl flex items-center justify-center gap-1.5 shrink-0 focus:outline-none" aria-label="Open Cart Drawer">
-            <i class="fa-solid fa-basket-shopping text-sm"></i>
+        <button type="button" onclick="CartManager.toggleDrawer(true, this)" class="bg-brand-maroon border border-brand-gold/40 text-amber-200 py-3 px-4 rounded-full font-bold text-xs shadow-2xl flex items-center justify-center gap-1.5 shrink-0 focus:outline-none" aria-label="Open Cart Drawer">
+            <i class="fa-solid fa-basket-shopping text-sm" aria-hidden="true"></i>
             <span id="mobileStickyCartBadge" class="w-4 h-4 rounded-full bg-amber-400 text-brand-deepMaroon text-[10px] font-black flex items-center justify-center">0</span>
         </button>
 
         <a href="#order" class="flex-grow bg-[#25D366] text-white py-3 px-4 rounded-full font-bold text-xs shadow-2xl flex items-center justify-center gap-2 border border-white/20 active:scale-95 transition">
-            <i class="fa-brands fa-whatsapp text-base"></i>
+            <i class="fa-brands fa-whatsapp text-base" aria-hidden="true"></i>
             <span>Order Pure Ghee on WhatsApp</span>
         </a>
     </div>
@@ -1643,80 +1867,63 @@
     <!-- JAVASCRIPT APPLICATION CORE -->
     <script>
         /**
-         * BILONA & CO. - Centralized Application Store & Controller
+         * BILONA & CO. - Single-Source-of-Truth Catalog & Store Controller
          */
         const CONFIG = {
             brandName: 'Bilona & Co.',
             whatsappNumber: '917302882134',
             location: 'Modinagar, Uttar Pradesh',
             freeShippingThreshold: 999,
+            standardShippingFee: 79,
             products: {
                 cow: {
                     id: 'cow',
                     name: '100% Fresh Desi Cow Ghee (A2)',
                     category: 'Cow Ghee',
                     variants: {
-                        '500ml': { size: '500ml', label: '500 ml', price: 849, mrp: null },
-                        '1000ml': { size: '1000ml', label: '1000 ml (1L)', price: 1599, mrp: null }
+                        '500ml': { size: '500ml', label: '500 ml Jar', shortLabel: '500 ml', price: 849, mrp: null },
+                        '1000ml': { size: '1000ml', label: '1000 ml (1 Litre Jar)', shortLabel: '1000 ml (1L)', price: 1599, mrp: null },
+                        '2000ml': { size: '2000ml', label: '2000 ml (2 Litres Pack)', shortLabel: '2000 ml (2L)', price: 3198, mrp: null }
                     },
-                    selectedVariant: '500ml'
+                    selectedVariant: '500ml',
+                    packQty: 1
                 },
                 buffalo: {
                     id: 'buffalo',
                     name: '100% Fresh Buffalo Ghee',
                     category: 'Buffalo Ghee',
                     variants: {
-                        '250ml': { size: '250ml', label: '250 ml', price: 399, mrp: 549 },
-                        '500ml': { size: '500ml', label: '500 ml', price: 799, mrp: 999 },
-                        '1000ml': { size: '1000ml', label: '1000 ml (1L)', price: 1499, mrp: 1650 },
-                        '2000ml': { size: '2000ml', label: '2000 ml (2L)', price: 2999, mrp: 3299 },
-                        '4000ml': { size: '4000ml', label: '4000 ml (4L)', price: 5799, mrp: 6000 },
-                        '5000ml': { size: '5000ml', label: '5000 ml (5L)', price: 6999, mrp: 7299 }
+                        '250ml': { size: '250ml', label: '250 ml Jar', shortLabel: '250 ml', price: 399, mrp: 549 },
+                        '500ml': { size: '500ml', label: '500 ml Jar', shortLabel: '500 ml', price: 799, mrp: 999 },
+                        '1000ml': { size: '1000ml', label: '1000 ml (1 Litre Jar)', shortLabel: '1000 ml (1L)', price: 1499, mrp: 1650 },
+                        '2000ml': { size: '2000ml', label: '2000 ml (2 Litres Pack)', shortLabel: '2000 ml (2L)', price: 2999, mrp: 3299 },
+                        '4000ml': { size: '4000ml', label: '4000 ml (4 Litres Pack)', shortLabel: '4000 ml (4L)', price: 5799, mrp: 6000 },
+                        '5000ml': { size: '5000ml', label: '5000 ml (5 Litres Pack)', shortLabel: '5000 ml (5L)', price: 6999, mrp: 7299 }
                     },
-                    selectedVariant: '500ml'
+                    selectedVariant: '500ml',
+                    packQty: 1
+                },
+                combo: {
+                    id: 'combo',
+                    name: 'Special Sampler Combo (Cow + Buffalo)',
+                    category: 'Sampler Combo',
+                    variants: {
+                        'combo_1l': { size: 'combo_1l', label: '500ml Cow + 500ml Buffalo (1L)', shortLabel: '500ml Cow + 500ml Buffalo', price: 1648, mrp: 1848 },
+                        'combo_2l': { size: 'combo_2l', label: '1L Cow + 1L Buffalo (2L Pack)', shortLabel: '1L Cow + 1L Buffalo', price: 3098, mrp: 3249 }
+                    },
+                    selectedVariant: 'combo_1l',
+                    packQty: 1
                 }
             }
         };
 
         /**
-         * Product Variety to Quantity Catalog Mapping
+         * Shipping Fee Calculation Helper
          */
-        const ORDER_FORM_CATALOG = {
-            cow: {
-                name: "100% Desi Cow Ghee (A2)",
-                variants: [
-                    { label: "500 ml Jar", value: "500ml", price: 849, mrp: null },
-                    { label: "1000 ml (1 Litre Jar)", value: "1000ml", price: 1599, mrp: null },
-                    { label: "2 Litres (Family Pack)", value: "2000ml", price: 3198, mrp: null },
-                    { label: "Bulk / Custom Enquiry", value: "custom", price: null, mrp: null }
-                ]
-            },
-            buffalo: {
-                name: "100% Pure Buffalo Ghee",
-                variants: [
-                    { label: "250 ml Jar", value: "250ml", price: 399, mrp: 549 },
-                    { label: "500 ml Jar", value: "500ml", price: 799, mrp: 999 },
-                    { label: "1000 ml (1 Litre Jar)", value: "1000ml", price: 1499, mrp: 1650 },
-                    { label: "2000 ml (2 Litres Pack)", value: "2000ml", price: 2999, mrp: 3299 },
-                    { label: "4000 ml (4 Litres Pack)", value: "4000ml", price: 5799, mrp: 6000 },
-                    { label: "5000 ml (5 Litres Pack)", value: "5000ml", price: 6999, mrp: 7299 },
-                    { label: "Bulk / Custom Enquiry", value: "custom", price: null, mrp: null }
-                ]
-            },
-            combo: {
-                name: "Special Sampler Combo",
-                variants: [
-                    { label: "500ml Cow + 500ml Buffalo (1L)", value: "combo_1l", price: 1648, mrp: 1848 },
-                    { label: "1L Cow + 1L Buffalo (2L Pack)", value: "combo_2l", price: 3098, mrp: 3249 }
-                ]
-            },
-            cart: {
-                name: "All Current Cart Items",
-                variants: [
-                    { label: "Standard Cart Checkout", value: "cart_standard", price: null, mrp: null }
-                ]
-            }
-        };
+        function calculateShipping(subtotal) {
+            if (subtotal <= 0) return 0;
+            return subtotal >= CONFIG.freeShippingThreshold ? 0 : CONFIG.standardShippingFee;
+        }
 
         /**
          * Product Management Module
@@ -1749,17 +1956,24 @@
                 Object.keys(product.variants).forEach(key => {
                     const btn = document.getElementById(`btn-${productId}-${key}`);
                     if (!btn) return;
-                    const isBuffalo = productId === 'buffalo';
-                    if (key === variantKey) {
-                        btn.className = isBuffalo
-                            ? 'border-2 border-brand-maroon bg-brand-maroon text-white font-bold py-2 px-2.5 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold'
-                            : 'border-2 border-brand-maroon bg-brand-maroon text-white font-bold py-2.5 px-3 rounded-xl text-xs flex justify-between items-center transition focus:outline-none focus:ring-2 focus:ring-brand-gold';
-                    } else {
-                        btn.className = isBuffalo
-                            ? 'border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2.5 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold'
-                            : 'border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2.5 px-3 rounded-xl text-xs flex justify-between items-center transition focus:outline-none focus:ring-2 focus:ring-brand-gold';
-                    }
+                    const activeClass = productId === 'buffalo'
+                        ? 'border-2 border-brand-maroon bg-brand-maroon text-white font-bold py-2 px-2 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold'
+                        : 'border-2 border-brand-maroon bg-brand-maroon text-white font-bold py-2 px-2.5 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold';
+                    const inactiveClass = productId === 'buffalo'
+                        ? 'border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold'
+                        : 'border border-stone-300 bg-white hover:border-brand-maroon font-bold py-2 px-2.5 rounded-xl text-xs flex flex-col items-start transition focus:outline-none focus:ring-2 focus:ring-brand-gold';
+
+                    btn.className = (key === variantKey) ? activeClass : inactiveClass;
                 });
+            },
+
+            adjustPackQty(productId, delta) {
+                const product = CONFIG.products[productId];
+                if (!product) return;
+                const nextQty = Math.min(20, Math.max(1, (product.packQty || 1) + delta));
+                product.packQty = nextQty;
+                const qtyElem = document.getElementById(`${productId}-pack-qty`);
+                if (qtyElem) qtyElem.textContent = nextQty;
             },
 
             getSelectedVariant(productId) {
@@ -1770,11 +1984,70 @@
         };
 
         /**
-         * Shopping Cart Management Module (With LocalStorage Persistence)
+         * Monthly Household Ghee Estimator Module
+         */
+        const GheeCalculator = {
+            currentRecommendation: { productId: 'cow', variantKey: '1000ml' },
+
+            update() {
+                const members = parseInt(document.getElementById('calcMembers')?.value || '3', 10);
+                const usage = document.getElementById('calcUsage')?.value || 'medium';
+                const pref = document.getElementById('calcPreference')?.value || 'cow';
+
+                const gramsPerPersonMap = { light: 220, medium: 350, heavy: 520 };
+                const estimatedMl = members * (gramsPerPersonMap[usage] || 350);
+
+                let productId = pref;
+                let variantKey = '1000ml';
+
+                if (pref === 'cow') {
+                    if (estimatedMl <= 650) variantKey = '500ml';
+                    else if (estimatedMl <= 1400) variantKey = '1000ml';
+                    else variantKey = '2000ml';
+                } else if (pref === 'buffalo') {
+                    if (estimatedMl <= 350) variantKey = '250ml';
+                    else if (estimatedMl <= 650) variantKey = '500ml';
+                    else if (estimatedMl <= 1400) variantKey = '1000ml';
+                    else if (estimatedMl <= 2600) variantKey = '2000ml';
+                    else if (estimatedMl <= 4300) variantKey = '4000ml';
+                    else variantKey = '5000ml';
+                } else {
+                    productId = 'combo';
+                    variantKey = estimatedMl <= 1300 ? 'combo_1l' : 'combo_2l';
+                }
+
+                this.currentRecommendation = { productId, variantKey };
+                const product = CONFIG.products[productId];
+                const variant = product.variants[variantKey];
+
+                const badge = document.getElementById('calcEstVolumeBadge');
+                const title = document.getElementById('calcRecommendedTitle');
+                const desc = document.getElementById('calcRecommendedDesc');
+                const price = document.getElementById('calcRecommendedPrice');
+
+                if (badge) badge.textContent = `~${estimatedMl} ml / month`;
+                if (title) title.textContent = `${product.name} — ${variant.shortLabel}`;
+                if (desc) desc.textContent = `Tailored for ${members}+ family members with ${usage} daily kitchen usage.`;
+                if (price) price.textContent = `₹${variant.price.toLocaleString('en-IN')}`;
+            },
+
+            addRecommendedToCart() {
+                const { productId, variantKey } = this.currentRecommendation;
+                ProductManager.setVariant(productId, variantKey);
+                CONFIG.products[productId].packQty = 1;
+                const qtyElem = document.getElementById(`${productId}-pack-qty`);
+                if (qtyElem) qtyElem.textContent = '1';
+                CartManager.addItem(productId);
+            }
+        };
+
+        /**
+         * Shopping Cart Management Module (With LocalStorage Persistence & Shipping Calculation)
          */
         const CartManager = {
-            storageKey: 'bilona_co_cart_v1',
+            storageKey: 'bilona_co_cart_v2',
             items: [],
+            lastTriggerEl: null,
 
             init() {
                 try {
@@ -1796,6 +2069,9 @@
                     console.warn('LocalStorage error while saving cart:', e);
                 }
                 this.render();
+                if (typeof CheckoutManager !== 'undefined') {
+                    CheckoutManager.updateOrderFormPreview();
+                }
             },
 
             addItem(productId) {
@@ -1803,25 +2079,32 @@
                 const variant = ProductManager.getSelectedVariant(productId);
                 if (!product || !variant) return;
 
+                const qtyToAdd = product.packQty || 1;
                 const cartItemId = `${productId}-${variant.size}`;
                 const existingIndex = this.items.findIndex(item => item.id === cartItemId);
 
                 if (existingIndex > -1) {
-                    this.items[existingIndex].qty += 1;
+                    this.items[existingIndex].qty += qtyToAdd;
                 } else {
                     this.items.push({
                         id: cartItemId,
                         productId: product.id,
                         name: product.name,
                         size: variant.size,
-                        label: variant.label,
+                        label: variant.shortLabel,
                         price: variant.price,
                         mrp: variant.mrp || null,
-                        qty: 1
+                        qty: qtyToAdd
                     });
                 }
 
+                // Reset product card pack stepper back to 1
+                product.packQty = 1;
+                const qtyElem = document.getElementById(`${productId}-pack-qty`);
+                if (qtyElem) qtyElem.textContent = '1';
+
                 this.save();
+                UIHelpers.showToast(`Added ${qtyToAdd} × ${product.name} (${variant.shortLabel}) to cart`);
                 this.toggleDrawer(true);
             },
 
@@ -1845,10 +2128,19 @@
             clearCart() {
                 this.items = [];
                 this.save();
+                UIHelpers.showToast('Cart cleared');
             },
 
             getSubtotal() {
                 return this.items.reduce((sum, item) => sum + (item.price * item.qty), 0);
+            },
+
+            getShipping() {
+                return calculateShipping(this.getSubtotal());
+            },
+
+            getGrandTotal() {
+                return this.getSubtotal() + this.getShipping();
             },
 
             getTotalCount() {
@@ -1858,13 +2150,15 @@
             render() {
                 const count = this.getTotalCount();
                 const subtotal = this.getSubtotal();
+                const shipping = this.getShipping();
+                const grandTotal = this.getGrandTotal();
 
                 const headerBadge = document.getElementById('headerCartCountBadge');
                 if (headerBadge) headerBadge.textContent = count;
                 const mobileBadge = document.getElementById('mobileStickyCartBadge');
                 if (mobileBadge) mobileBadge.textContent = count;
                 const drawerCount = document.getElementById('drawerCartCount');
-                if (drawerCount) drawerCount.textContent = `${count} Jar${count === 1 ? '' : 's'}`;
+                if (drawerCount) drawerCount.textContent = `${count} Pack${count === 1 ? '' : 's'}`;
 
                 const threshold = CONFIG.freeShippingThreshold;
                 const progressPercent = Math.min(100, Math.round((subtotal / threshold) * 100));
@@ -1886,8 +2180,23 @@
 
                 const subtotalElem = document.getElementById('cartSubtotalDisplay');
                 if (subtotalElem) subtotalElem.textContent = `₹${subtotal.toLocaleString('en-IN')}`;
+
+                const shippingElem = document.getElementById('cartShippingDisplay');
+                if (shippingElem) {
+                    if (subtotal === 0) {
+                        shippingElem.textContent = '₹0';
+                        shippingElem.className = 'font-semibold text-stone-500';
+                    } else if (shipping === 0) {
+                        shippingElem.textContent = 'FREE (₹0)';
+                        shippingElem.className = 'font-bold text-emerald-700';
+                    } else {
+                        shippingElem.textContent = `₹${shipping}`;
+                        shippingElem.className = 'font-semibold text-stone-800';
+                    }
+                }
+
                 const totalElem = document.getElementById('cartTotalDisplay');
-                if (totalElem) totalElem.textContent = `₹${subtotal.toLocaleString('en-IN')}`;
+                if (totalElem) totalElem.textContent = `₹${grandTotal.toLocaleString('en-IN')}`;
 
                 const container = document.getElementById('cartItemsContainer');
                 if (!container) return;
@@ -1895,9 +2204,9 @@
                 if (this.items.length === 0) {
                     container.innerHTML = `
                         <div class="text-center py-12 px-4 text-stone-500">
-                            <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-amber-50 flex items-center justify-center text-2xl text-amber-600">🏺</div>
+                            <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-amber-50 flex items-center justify-center text-2xl text-amber-600" aria-hidden="true">🏺</div>
                             <p class="font-bold text-stone-700 text-sm">Your cart is currently empty</p>
-                            <p class="text-xs text-stone-400 mt-1">Select Desi Cow or Buffalo Ghee to start your order.</p>
+                            <p class="text-xs text-stone-400 mt-1">Select Desi Cow, Buffalo Ghee, or a Sampler Combo to start your order.</p>
                             <a href="#products" onclick="CartManager.toggleDrawer(false)" class="inline-block mt-4 bg-brand-maroon text-amber-100 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wider">
                                 View Products
                             </a>
@@ -1910,44 +2219,50 @@
                     <div class="p-3 bg-stone-50 rounded-2xl border border-stone-200/80 flex items-center justify-between gap-3">
                         <div class="flex-grow">
                             <h4 class="font-bold text-xs sm:text-sm text-brand-maroon">${item.name}</h4>
-                            <span class="text-[11px] text-stone-500 block">Jar Size: ${item.label} • ₹${item.price.toLocaleString('en-IN')} ${item.mrp ? `<span class="line-through text-stone-400">₹${item.mrp.toLocaleString('en-IN')}</span>` : ''} each</span>
+                            <span class="text-[11px] text-stone-500 block">Pack: ${item.label} • ₹${item.price.toLocaleString('en-IN')} ${item.mrp ? `<span class="line-through text-stone-400">₹${item.mrp.toLocaleString('en-IN')}</span>` : ''} each</span>
                             <span class="text-xs font-bold text-stone-800">Total: ₹${(item.price * item.qty).toLocaleString('en-IN')}</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <div class="flex items-center border border-stone-300 rounded-lg bg-white overflow-hidden">
-                                <button type="button" onclick="CartManager.updateQty('${item.id}', -1)" class="w-7 h-7 text-xs font-bold text-stone-600 hover:bg-stone-100 flex items-center justify-center focus:outline-none" aria-label="Decrease quantity">-</button>
+                                <button type="button" onclick="CartManager.updateQty('${item.id}', -1)" class="w-7 h-7 text-xs font-bold text-stone-600 hover:bg-stone-100 flex items-center justify-center focus:outline-none" aria-label="Decrease quantity of ${item.name}">-</button>
                                 <span class="w-7 text-center text-xs font-bold text-stone-900">${item.qty}</span>
-                                <button type="button" onclick="CartManager.updateQty('${item.id}', 1)" class="w-7 h-7 text-xs font-bold text-stone-600 hover:bg-stone-100 flex items-center justify-center focus:outline-none" aria-label="Increase quantity">+</button>
+                                <button type="button" onclick="CartManager.updateQty('${item.id}', 1)" class="w-7 h-7 text-xs font-bold text-stone-600 hover:bg-stone-100 flex items-center justify-center focus:outline-none" aria-label="Increase quantity of ${item.name}">+</button>
                             </div>
-                            <button type="button" onclick="CartManager.removeItem('${item.id}')" class="text-stone-400 hover:text-red-700 p-1.5" aria-label="Remove item">
-                                <i class="fa-solid fa-trash-can text-xs"></i>
+                            <button type="button" onclick="CartManager.removeItem('${item.id}')" class="text-stone-400 hover:text-red-700 p-1.5" aria-label="Remove ${item.name}">
+                                <i class="fa-solid fa-trash-can text-xs" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
                 `).join('');
             },
 
-            toggleDrawer(open) {
+            toggleDrawer(open, triggerEl = null) {
                 const drawer = document.getElementById('cartDrawer');
                 const backdrop = document.getElementById('cartDrawerBackdrop');
                 if (!drawer || !backdrop) return;
 
                 if (open) {
+                    if (triggerEl) this.lastTriggerEl = triggerEl;
                     drawer.classList.remove('translate-x-full');
                     drawer.setAttribute('aria-hidden', 'false');
                     backdrop.classList.remove('opacity-0', 'pointer-events-none');
                     document.body.classList.add('overflow-hidden');
+                    setTimeout(() => document.getElementById('closeCartDrawerBtn')?.focus(), 50);
                 } else {
                     drawer.classList.add('translate-x-full');
                     drawer.setAttribute('aria-hidden', 'true');
                     backdrop.classList.add('opacity-0', 'pointer-events-none');
                     document.body.classList.remove('overflow-hidden');
+                    if (this.lastTriggerEl) {
+                        this.lastTriggerEl.focus();
+                        this.lastTriggerEl = null;
+                    }
                 }
             }
         };
 
         /**
-         * Checkout & WhatsApp Order Generation Module
+         * Checkout & WhatsApp Order Generation Module (Unified with CONFIG.products)
          */
         const CheckoutManager = {
             buyNow(productId) {
@@ -1955,18 +2270,36 @@
                 const variant = ProductManager.getSelectedVariant(productId);
                 if (!product || !variant) return;
 
+                const qty = product.packQty || 1;
+                const subtotal = variant.price * qty;
+                const shipping = calculateShipping(subtotal);
+                const grandTotal = subtotal + shipping;
                 const mrpLine = variant.mrp ? ` (MRP ₹${variant.mrp})` : '';
+
                 const message = `Namaste Bilona & Co.! 🙏\n\nI would like to place a Direct Order:\n` +
                     `--------------------------------\n` +
                     `• *Product:* ${product.name}\n` +
-                    `• *Size:* ${variant.label}\n` +
-                    `• *Offer Price:* ₹${variant.price}${mrpLine}\n` +
-                    `• *Quantity:* 1 Pack\n` +
-                    `• *Total:* ₹${variant.price}\n` +
+                    `• *Pack Size:* ${variant.label}\n` +
+                    `• *Unit Price:* ₹${variant.price}${mrpLine}\n` +
+                    `• *Quantity:* ${qty} Pack${qty > 1 ? 's' : ''}\n` +
+                    `• *Subtotal:* ₹${subtotal}\n` +
+                    `• *Shipping:* ${shipping === 0 ? 'FREE (Pan-India order ≥ ₹999)' : `₹${shipping}`}\n` +
+                    `• *Total Payable:* ₹${grandTotal}\n` +
                     `--------------------------------\n` +
                     `Please share payment details (UPI/Bank) and shipping timeline for my delivery. Thank you!`;
 
+                UIHelpers.showToast('Opening WhatsApp with your order summary...');
                 this.openWhatsApp(message);
+            },
+
+            prefillFormWithCart() {
+                CartManager.toggleDrawer(false);
+                const varietySelect = document.getElementById('custProductSelect');
+                if (varietySelect && CartManager.items.length > 0) {
+                    varietySelect.value = 'cart';
+                    this.syncVariants();
+                }
+                document.getElementById('order')?.scrollIntoView({ behavior: 'smooth' });
             },
 
             syncVariants() {
@@ -1975,20 +2308,37 @@
                 if (!varietySelect || !variantSelect) return;
 
                 const selectedVarietyKey = varietySelect.value;
-                const product = ORDER_FORM_CATALOG[selectedVarietyKey] || ORDER_FORM_CATALOG.cow;
-
                 variantSelect.innerHTML = '';
 
-                product.variants.forEach((v) => {
+                if (selectedVarietyKey === 'cart') {
                     const opt = document.createElement('option');
-                    opt.value = v.value;
-                    opt.textContent = v.price
-                        ? (v.mrp ? `${v.label} — ₹${v.price} (MRP ₹${v.mrp})` : `${v.label} — ₹${v.price}`)
-                        : v.label;
-                    opt.dataset.price = v.price !== null ? v.price : 'Custom Quote';
-                    opt.dataset.name = `${product.name} (${v.label})`;
+                    opt.value = 'cart_standard';
+                    opt.textContent = 'All Current Cart Items';
+                    variantSelect.appendChild(opt);
+                    this.updateOrderFormPreview();
+                    return;
+                }
+
+                const product = CONFIG.products[selectedVarietyKey] || CONFIG.products.cow;
+
+                Object.values(product.variants).forEach((v) => {
+                    const opt = document.createElement('option');
+                    opt.value = v.size;
+                    opt.textContent = v.mrp
+                        ? `${v.label} — ₹${v.price.toLocaleString('en-IN')} (MRP ₹${v.mrp.toLocaleString('en-IN')})`
+                        : `${v.label} — ₹${v.price.toLocaleString('en-IN')}`;
+                    opt.dataset.price = v.price;
+                    opt.dataset.name = `${product.name} — ${v.shortLabel}`;
                     variantSelect.appendChild(opt);
                 });
+
+                // Add Bulk / Custom option at the end
+                const bulkOpt = document.createElement('option');
+                bulkOpt.value = 'custom';
+                bulkOpt.textContent = 'Bulk / Custom Event Enquiry';
+                bulkOpt.dataset.price = 'Custom Quote';
+                bulkOpt.dataset.name = `${product.name} — Bulk / Custom Enquiry`;
+                variantSelect.appendChild(bulkOpt);
 
                 this.updateOrderFormPreview();
             },
@@ -1998,47 +2348,64 @@
                 const variantSelect = document.getElementById('custQuantitySelect');
                 const summaryText = document.getElementById('orderSelectionSummaryText');
                 const priceBadge = document.getElementById('orderSelectionPriceBadge');
+                const shippingNote = document.getElementById('orderSelectionShippingNote');
+                const cartErr = document.getElementById('err-custCart');
 
                 if (!varietySelect || !variantSelect || !summaryText || !priceBadge) return;
+
+                if (cartErr) {
+                    cartErr.textContent = '';
+                    cartErr.classList.add('hidden');
+                }
 
                 const varietyKey = varietySelect.value;
                 const selectedOpt = variantSelect.options[variantSelect.selectedIndex];
 
                 if (varietyKey === 'cart') {
                     const cartCount = CartManager.getTotalCount();
-                    const cartTotal = CartManager.getSubtotal();
+                    const subtotal = CartManager.getSubtotal();
+                    const shipping = CartManager.getShipping();
+                    const total = CartManager.getGrandTotal();
+
                     if (cartCount === 0) {
-                        summaryText.textContent = 'Your Cart is empty. Select Cow/Buffalo above or add items to cart.';
+                        summaryText.textContent = 'Your Cart is empty. Add jars above or choose a product variety.';
+                        if (shippingNote) shippingNote.textContent = '';
                         priceBadge.textContent = '₹0';
                     } else {
-                        summaryText.textContent = `${cartCount} Cart Item(s) ready for checkout`;
-                        priceBadge.textContent = `₹${cartTotal.toLocaleString('en-IN')}`;
+                        summaryText.textContent = `${cartCount} Cart Pack(s) • Subtotal ₹${subtotal.toLocaleString('en-IN')}`;
+                        if (shippingNote) shippingNote.textContent = shipping === 0 ? 'Shipping: FREE' : `Shipping: ₹${shipping}`;
+                        priceBadge.textContent = `₹${total.toLocaleString('en-IN')}`;
                     }
                     return;
                 }
 
                 if (selectedOpt) {
-                    const price = selectedOpt.dataset.price;
+                    const rawPrice = selectedOpt.dataset.price;
                     summaryText.textContent = selectedOpt.dataset.name || selectedOpt.textContent;
-                    priceBadge.textContent = isNaN(price) ? price : `₹${Number(price).toLocaleString('en-IN')}`;
+                    if (isNaN(rawPrice)) {
+                        if (shippingNote) shippingNote.textContent = 'Custom Quote';
+                        priceBadge.textContent = rawPrice;
+                    } else {
+                        const sub = Number(rawPrice);
+                        const ship = calculateShipping(sub);
+                        const tot = sub + ship;
+                        if (shippingNote) shippingNote.textContent = ship === 0 ? 'Shipping: FREE' : `Shipping: ₹${ship}`;
+                        priceBadge.textContent = `₹${tot.toLocaleString('en-IN')}`;
+                    }
                 }
             },
 
             checkoutCart() {
                 if (CartManager.items.length === 0) {
-                    const cartBtn = document.getElementById('cartCheckoutBtn');
-                    if (cartBtn) {
-                        const originalHtml = cartBtn.innerHTML;
-                        cartBtn.innerHTML = '<span>Cart is Empty! Select Ghee First</span>';
-                        setTimeout(() => { cartBtn.innerHTML = originalHtml; }, 2000);
-                    }
+                    UIHelpers.showToast('Your cart is empty! Select a ghee jar first.');
                     return;
                 }
 
                 const subtotal = CartManager.getSubtotal();
-                const isFreeShipping = subtotal >= CONFIG.freeShippingThreshold;
+                const shipping = CartManager.getShipping();
+                const grandTotal = CartManager.getGrandTotal();
 
-                let itemsListText = CartManager.items.map((item, idx) => 
+                const itemsListText = CartManager.items.map((item, idx) =>
                     `${idx + 1}. *${item.name}* (${item.label}) x ${item.qty} = ₹${item.price * item.qty}`
                 ).join('\n');
 
@@ -2048,19 +2415,20 @@
                     `--------------------------------\n` +
                     `• *Total Packs:* ${CartManager.getTotalCount()}\n` +
                     `• *Subtotal:* ₹${subtotal}\n` +
-                    `• *Shipping:* ${isFreeShipping ? 'FREE (Pan-India order > ₹999)' : 'Standard (To be confirmed)'}\n` +
+                    `• *Shipping:* ${shipping === 0 ? 'FREE (Pan-India order ≥ ₹999)' : `₹${shipping}`}\n` +
+                    `• *Total Payable:* ₹${grandTotal}\n` +
                     `--------------------------------\n` +
                     `Please confirm order availability and share UPI payment QR code.`;
 
                 CartManager.toggleDrawer(false);
+                UIHelpers.showToast('Opening WhatsApp with your cart order...');
                 this.openWhatsApp(message);
             },
 
             handleFormSubmit(event) {
                 event.preventDefault();
 
-                // Clear Prior Errors
-                ['custName', 'custPhone', 'custAddress', 'custCity', 'custState', 'custPin'].forEach(fieldId => {
+                ['custName', 'custPhone', 'custAddress', 'custCity', 'custState', 'custPin', 'custCart'].forEach(fieldId => {
                     const errElem = document.getElementById(`err-${fieldId}`);
                     if (errElem) {
                         errElem.textContent = '';
@@ -2068,7 +2436,6 @@
                     }
                 });
 
-                // Read Values
                 const name = document.getElementById('custName').value.trim();
                 const phone = document.getElementById('custPhone').value.trim();
                 const productKey = document.getElementById('custProductSelect').value;
@@ -2079,6 +2446,11 @@
                 const notes = document.getElementById('custNotes').value.trim();
 
                 let hasError = false;
+
+                if (productKey === 'cart' && CartManager.items.length === 0) {
+                    this.showError('custCart', 'Your cart is currently empty. Please add jars to your cart or choose a product variety above.');
+                    hasError = true;
+                }
 
                 if (name.length < 2) {
                     this.showError('custName', 'Please enter your full name (minimum 2 characters).');
@@ -2117,10 +2489,13 @@
 
                 const summaryText = document.getElementById('orderSelectionSummaryText')?.textContent || '';
                 const estPrice = document.getElementById('orderSelectionPriceBadge')?.textContent || '';
+                const shippingInfo = document.getElementById('orderSelectionShippingNote')?.textContent || '';
 
                 let cartSummary = '';
                 if (productKey === 'cart' && CartManager.items.length > 0) {
-                    cartSummary = `\n*Cart Items Breakdown:* \n` + CartManager.items.map(i => `  • ${i.name} (${i.label}) x ${i.qty}`).join('\n') + `\n*Subtotal:* ₹${CartManager.getSubtotal()}`;
+                    cartSummary = `\n*Cart Items Breakdown:* \n` +
+                        CartManager.items.map(i => `  • ${i.name} (${i.label}) x ${i.qty} = ₹${i.price * i.qty}`).join('\n') +
+                        `\n*Subtotal:* ₹${CartManager.getSubtotal()}`;
                 }
 
                 const message = `*NEW ORDER - BILONA & CO.* 🏺\n` +
@@ -2128,6 +2503,7 @@
                     `👤 *Customer Name:* ${name}\n` +
                     `📞 *WhatsApp / Phone:* ${sanitizedPhone}\n` +
                     `📦 *Order Selection:* ${summaryText}\n` +
+                    `🚚 *${shippingInfo}*\n` +
                     `💰 *Estimated Total:* ${estPrice}\n` +
                     (cartSummary ? `${cartSummary}\n` : '') +
                     `------------------------\n` +
@@ -2138,6 +2514,7 @@
                     `========================\n` +
                     `Please confirm order availability and share payment details (UPI/Bank) for dispatch from Modinagar.`;
 
+                UIHelpers.showToast('Order formatted! Opening WhatsApp...');
                 this.openWhatsApp(message);
             },
 
@@ -2234,9 +2611,26 @@
         };
 
         /**
-         * UI Helpers Module (Accordions, Legal Modals)
+         * UI Helpers Module (Accordions, Legal Modals with Focus Management, Toasts)
          */
         const UIHelpers = {
+            lastModalTrigger: null,
+            toastTimeout: null,
+
+            showToast(msg) {
+                const toast = document.getElementById('toastNotification');
+                const msgEl = document.getElementById('toastMessage');
+                if (!toast || !msgEl) return;
+
+                msgEl.textContent = msg;
+                toast.classList.remove('translate-y-10', 'opacity-0', 'pointer-events-none');
+
+                if (this.toastTimeout) clearTimeout(this.toastTimeout);
+                this.toastTimeout = setTimeout(() => {
+                    toast.classList.add('translate-y-10', 'opacity-0', 'pointer-events-none');
+                }, 2800);
+            },
+
             toggleAccordion(id) {
                 const content = document.getElementById(id);
                 const icon = document.getElementById(`icon-${id}`);
@@ -2246,13 +2640,16 @@
                 icon.classList.toggle('rotate-180');
             },
 
-            toggleFaq(faqId) {
+            toggleFaq(faqId, triggerBtn = null) {
                 const ans = document.getElementById(faqId.replace('faq-', 'faq-ans-'));
                 const icon = document.getElementById(faqId.replace('faq-', 'faq-icon-'));
                 if (!ans || !icon) return;
 
-                ans.classList.toggle('hidden');
+                const isHidden = ans.classList.toggle('hidden');
                 icon.classList.toggle('rotate-180');
+                if (triggerBtn) {
+                    triggerBtn.setAttribute('aria-expanded', String(!isHidden));
+                }
             },
 
             legalData: {
@@ -2260,7 +2657,7 @@
                     title: 'Shipping & Delivery Policy',
                     content: `
                         <p><strong>Pan-India Shipping:</strong> We dispatch fresh small-batch ghee across India using reliable courier partners (Delhivery, BlueDart, DTDC).</p>
-                        <p><strong>Free Delivery:</strong> All orders of ₹999 or above qualify for 100% Free Pan-India Delivery. For orders below ₹999, standard courier charges are applied based on your exact pin code.</p>
+                        <p><strong>Free Delivery:</strong> All orders of ₹999 or above qualify for 100% Free Pan-India Delivery. For orders below ₹999, a flat ₹79 shipping fee applies.</p>
                         <p><strong>Dispatch & Transit Timelines:</strong> Orders are packed within 24 hours of payment confirmation. Transit typically requires 24–48 hours for Delhi NCR / Western UP and 3–5 business days for other states.</p>
                         <p><strong>Packaging:</strong> Each glass jar is cushioned inside heavy shock-absorbent sleeves to prevent transit damage.</p>
                     `
@@ -2293,16 +2690,17 @@
                     title: 'FSSAI & Regulatory Compliance',
                     content: `
                         <p><strong>Food Safety Adherence:</strong> Bilona & Co. products are packaged under strict sanitary standards in compliance with the Food Safety and Standards Authority of India (FSSAI).</p>
-                        <p><strong>Registration Number:</strong> [FSSAI-REGISTRATION-NUMBER-PLACEHOLDER]</p>
+                        <p><strong>Registration Status:</strong> FSSAI Registration under active verification for our Modinagar, U.P. artisanal unit. Batch details are printed on every jar label.</p>
                         <p><strong>Shelf Life:</strong> Best before 9 to 12 months from the packaging date when stored in an airtight, dry condition away from sunlight.</p>
                     `
                 }
             },
 
-            openLegalModal(type) {
+            openLegalModal(type, triggerEl = null) {
                 const info = this.legalData[type];
                 if (!info) return;
 
+                if (triggerEl) this.lastModalTrigger = triggerEl;
                 document.getElementById('legalModalTitle').textContent = info.title;
                 document.getElementById('legalModalContent').innerHTML = info.content;
 
@@ -2311,7 +2709,9 @@
                 if (backdrop && modal) {
                     backdrop.classList.remove('opacity-0', 'pointer-events-none');
                     modal.classList.remove('opacity-0', 'pointer-events-none');
+                    modal.setAttribute('aria-hidden', 'false');
                     document.body.classList.add('overflow-hidden');
+                    setTimeout(() => document.getElementById('closeLegalModalBtn')?.focus(), 50);
                 }
             },
 
@@ -2321,17 +2721,22 @@
                 if (backdrop && modal) {
                     backdrop.classList.add('opacity-0', 'pointer-events-none');
                     modal.classList.add('opacity-0', 'pointer-events-none');
+                    modal.setAttribute('aria-hidden', 'true');
                     document.body.classList.remove('overflow-hidden');
+                    if (this.lastModalTrigger) {
+                        this.lastModalTrigger.focus();
+                        this.lastModalTrigger = null;
+                    }
                 }
             }
         };
 
-        // Bootstrap Application upon Window Load
+        // Bootstrap Application upon DOM Load
         window.addEventListener('DOMContentLoaded', () => {
             CartManager.init();
             NavigationManager.init();
+            GheeCalculator.update();
 
-            // Set up Dropdown synchronization & Event Listeners
             const varietySelect = document.getElementById('custProductSelect');
             const variantSelect = document.getElementById('custQuantitySelect');
 
@@ -2342,7 +2747,6 @@
                 variantSelect.addEventListener('change', () => {
                     CheckoutManager.updateOrderFormPreview();
                 });
-                // Initialize default options
                 CheckoutManager.syncVariants();
             }
         });
